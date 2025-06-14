@@ -6,6 +6,12 @@
     <title>Figma Design</title>
 </head>
 <body>
-    <iframe src="<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/hAWpbC09dPrldnFxsHvzs3/Portfolio-website-template---Edit-your-portfolio-and-get-your-website-live--Community---Copy-?node-id=0-1&embed-host=share" allowfullscreen></iframe>" height="600" frameborder="0" allowfullscreen></iframe>
+       <iframe
+        style="border: 1px solid rgba(0, 0, 0, 0.1);"
+        width="800"
+        height="450"
+        src="https://www.google.com/search?q=src%3D%22https%3A%2F%2Fembed.figma.com%2Fdesign%2FhAWpbC09dPrldnFxsHvzs3%2FPortfolio-website-template---Edit-your-portfolio-and-get-your-website-live--Community---Copy-%3Fnode-id%3D0-1%26embed-host%3Dshare%22&rlz=1C1VDKB_enUS1143US1143&oq=src%3D%22https%3A%2F%2Fembed.figma.com%2Fdesign%2FhAWpbC09dPrldnFxsHvzs3%2FPortfolio-website-template---Edit-your-portfolio-and-get-your-website-live--Community---Copy-%3Fnode-id%3D0-1%26embed-host%3Dshare%22&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzg0NGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8"
+        allowfullscreen>
+    </iframe>
 </body>
 </html>
