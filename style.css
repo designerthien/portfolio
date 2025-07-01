@@ -1,11 +1,11 @@
-.element-portfolio {
-  display: inline-flex;
+.element-about-page {
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   position: relative;
 }
 
-.element-portfolio .navigation {
+.element-about-page .navigation {
   position: relative;
   align-self: stretch;
   width: 100%;
@@ -13,7 +13,7 @@
   background-color: #ffffff;
 }
 
-.element-portfolio .nav-nav-menu {
+.element-about-page .nav-nav-menu {
   position: absolute;
   width: 267px;
   height: 28px;
@@ -21,12 +21,12 @@
   left: 969px;
 }
 
-.element-portfolio .text-wrapper {
+.element-about-page .text-wrapper {
   position: absolute;
   height: 28px;
   top: 0;
   left: 0;
-  font-family: "Epilogue", Helvetica;
+  font-family: "Epilogue-Regular", Helvetica;
   font-weight: 400;
   color: var(--black);
   font-size: 17px;
@@ -35,12 +35,12 @@
   white-space: nowrap;
 }
 
-.element-portfolio .div {
+.element-about-page .div {
   position: absolute;
   height: 28px;
   top: 0;
   left: 101px;
-  font-family: "Epilogue", Helvetica;
+  font-family: "Epilogue-Regular", Helvetica;
   font-weight: 400;
   color: var(--black);
   font-size: 17px;
@@ -49,12 +49,12 @@
   white-space: nowrap;
 }
 
-.element-portfolio .text-wrapper-2 {
+.element-about-page .text-wrapper-2 {
   position: absolute;
   height: 28px;
   top: 0;
   left: 192px;
-  font-family: "Epilogue", Helvetica;
+  font-family: "Epilogue-Regular", Helvetica;
   font-weight: 400;
   color: var(--black);
   font-size: 17px;
@@ -63,7 +63,7 @@
   white-space: nowrap;
 }
 
-.element-portfolio .logo {
+.element-about-page .logo {
   position: absolute;
   width: 49px;
   height: 30px;
@@ -71,12 +71,12 @@
   left: 50px;
 }
 
-.element-portfolio .text-wrapper-3 {
+.element-about-page .text-wrapper-3 {
   position: absolute;
   height: 30px;
   top: -1px;
   left: 0;
-  font-family: "Epilogue", Helvetica;
+  font-family: "Epilogue-SemiBold", Helvetica;
   font-weight: 600;
   color: var(--black);
   font-size: 20px;
@@ -85,516 +85,203 @@
   white-space: nowrap;
 }
 
-.element-portfolio .header {
+.element-about-page .about-header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 100px;
+  padding: 120px 320px;
   position: relative;
   align-self: stretch;
   width: 100%;
   flex: 0 0 auto;
-  background-color: #ffffff;
+  background-color: #f9e6f0;
 }
 
-.element-portfolio .header-2 {
+.element-about-page .about-header-2 {
   display: flex;
-  width: 1080px;
-  align-items: center;
-  gap: 28px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.element-portfolio .div-2 {
-  display: inline-flex;
-  gap: 40px;
-  flex-direction: column;
-  align-items: flex-start;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.element-portfolio .text-wrapper-4 {
-  position: relative;
-  width: 557px;
-  margin-top: -1.00px;
-  font-family: var(--subtitle-font-family);
-  font-weight: var(--subtitle-font-weight);
-  color: var(--black);
-  font-size: var(--subtitle-font-size);
-  letter-spacing: var(--subtitle-letter-spacing);
-  line-height: var(--subtitle-line-height);
-  font-style: var(--subtitle-font-style);
-}
-
-.element-portfolio .text-wrapper-5 {
-  position: relative;
-  width: 557px;
-  font-family: "Epilogue", Helvetica;
-  font-weight: 600;
-  color: var(--black);
-  font-size: 80px;
-  letter-spacing: 0;
-  line-height: 90px;
-}
-
-.element-portfolio .and-i-made-it-myself {
-  position: relative;
-  width: 557px;
-  font-family: var(--body-text-font-family);
-  font-weight: var(--body-text-font-weight);
-  color: var(--black);
-  font-size: var(--body-text-font-size);
-  letter-spacing: var(--body-text-letter-spacing);
-  line-height: var(--body-text-line-height);
-  font-style: var(--body-text-font-style);
-}
-
-.element-portfolio .image {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.element-portfolio .logos-section {
-  display: flex;
+  width: 780px;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  padding: 0px 66px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  flex: 0 0 auto;
-  background-color: #ffffff;
-}
-
-.element-portfolio .logos {
-  display: flex;
-  width: 1078px;
-  align-items: center;
-  justify-content: space-between;
-  padding: 60px 0px;
-  position: relative;
-  align-self: stretch;
-  border-top-width: 2px;
-  border-top-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-style: solid;
-  border-color: #00000033;
-}
-
-.element-portfolio .behance {
-  position: relative;
-  width: 53.69px;
-  height: 34px;
-}
-
-.element-portfolio .google {
-  position: relative;
-  width: 103.29px;
-  height: 34px;
-}
-
-.element-portfolio .apple {
-  position: relative;
-  width: 38.11px;
-  height: 46.83px;
-}
-
-.element-portfolio .dribbble {
-  position: relative;
-  width: 139.01px;
-  height: 34px;
-}
-
-.element-portfolio .awwwards {
-  position: relative;
-  width: 213.85px;
-  height: 34px;
-}
-
-.element-portfolio .skills-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 180px 140px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  flex: 0 0 auto;
-  background-color: #ffffff;
-}
-
-.element-portfolio .skills {
-  display: inline-flex;
-  align-items: flex-start;
-  gap: 125px;
+  gap: 70px;
   position: relative;
   flex: 0 0 auto;
+  margin-left: -70.00px;
+  margin-right: -70.00px;
 }
 
-.element-portfolio .skill {
+.element-about-page .div-2 {
   display: inline-flex;
   flex-direction: column;
-  align-items: center;
-  gap: 56px;
-  position: relative;
-  flex: 0 0 auto;
-  transition: all 0.2s ease;
-}
-
-.element-portfolio .skill:hover {
-  transform: translate(0, -5px);
-}
-
-.element-portfolio .skill-2 {
-  gap: 56px;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.element-portfolio .image-placeholder {
-  position: relative;
-  width: 130px;
-  height: 130px;
-  background: url(https://c.animaapp.com/mbwjqn0mP4Q2Ww/img/image-placeholder-4.png)
-    50% 50% / cover;
-}
-
-.element-portfolio .headline-subhead {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 19px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.element-portfolio .main-title {
-  position: relative;
-  width: 249.9px;
-  margin-top: -1.00px;
-  font-family: var(--h3-font-family);
-  font-weight: var(--h3-font-weight);
-  color: var(--black);
-  font-size: var(--h3-font-size);
-  text-align: center;
-  letter-spacing: var(--h3-letter-spacing);
-  line-height: var(--h3-line-height);
-  font-style: var(--h3-font-style);
-}
-
-.element-portfolio .p {
-  position: relative;
-  width: 249.9px;
-  font-family: var(--body-text-font-family);
-  font-weight: var(--body-text-font-weight);
-  color: var(--black);
-  font-size: var(--body-text-font-size);
-  text-align: center;
-  letter-spacing: var(--body-text-letter-spacing);
-  line-height: var(--body-text-line-height);
-  font-style: var(--body-text-font-style);
-}
-
-.element-portfolio .skill-wrapper {
-  gap: 54px;
-  transition: all 0.2s ease;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.element-portfolio .skill-wrapper:hover {
-  transform: translate(0, -5px);
-}
-
-.element-portfolio .image-placeholder-2 {
-  background: url(https://c.animaapp.com/mbwjqn0mP4Q2Ww/img/image-placeholder-5.png)
-    50% 50% / cover;
-  position: relative;
-  width: 130px;
-  height: 130px;
-}
-
-.element-portfolio .image-placeholder-3 {
-  background: url(https://c.animaapp.com/mbwjqn0mP4Q2Ww/img/image-placeholder-6.png)
-    50% 50% / cover;
-  position: relative;
-  width: 130px;
-  height: 130px;
-}
-
-.element-portfolio .latest-work-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 60px;
-  padding: 20px 100px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  flex: 0 0 auto;
-  background-color: #ffffff;
-}
-
-.element-portfolio .text-wrapper-6 {
-  position: relative;
-  width: fit-content;
-  margin-top: -1.00px;
-  font-family: var(--h2-font-family);
-  font-weight: var(--h2-font-weight);
-  color: var(--black);
-  font-size: var(--h2-font-size);
-  text-align: center;
-  letter-spacing: var(--h2-letter-spacing);
-  line-height: var(--h2-line-height);
-  white-space: nowrap;
-  font-style: var(--h2-font-style);
-}
-
-.element-portfolio .work-cards {
-  align-items: center;
-  gap: 60px;
-  display: inline-flex;
-  flex-direction: column;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.element-portfolio .div-3 {
-  display: inline-flex;
-  align-items: flex-start;
-  gap: 67.5px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.element-portfolio .work-card {
-  align-items: flex-start;
-  gap: 25px;
-  transition: all 0.2s ease;
-  display: inline-flex;
-  flex-direction: column;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.element-portfolio .work-card:hover {
-  transform: scale(0.9);
-}
-
-.element-portfolio .img {
-  position: relative;
-  width: 315px;
-  height: 315px;
-  object-fit: cover;
-}
-
-.element-portfolio .headline-subhead-2 {
-  display: flex;
-  width: 315px;
-  gap: 10px;
-  flex-direction: column;
-  align-items: flex-start;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.element-portfolio .project-title {
-  position: relative;
-  width: 315px;
-  margin-top: -1.00px;
-  font-family: var(--subtitle-font-family);
-  font-weight: var(--subtitle-font-weight);
-  color: var(--black);
-  font-size: var(--subtitle-font-size);
-  letter-spacing: var(--subtitle-letter-spacing);
-  line-height: var(--subtitle-line-height);
-  font-style: var(--subtitle-font-style);
-}
-
-.element-portfolio .UI-art-drection {
-  position: relative;
-  width: 315px;
-  font-family: var(--body-text-font-family);
-  font-weight: var(--body-text-font-weight);
-  color: var(--black);
-  font-size: var(--body-text-font-size);
-  letter-spacing: var(--body-text-letter-spacing);
-  line-height: var(--body-text-line-height);
-  font-style: var(--body-text-font-style);
-}
-
-.element-portfolio .clients-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  padding: 100px 100px 150px;
-  align-self: stretch;
-  width: 100%;
-  background-color: #ffffff;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.element-portfolio .client-cards {
-  flex-direction: column;
-  align-items: center;
-  gap: 55px;
-  display: inline-flex;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.element-portfolio .text-wrapper-7 {
-  position: relative;
-  width: 113px;
-  height: 26.98px;
-  margin-top: -1.00px;
-  font-family: "Epilogue", Helvetica;
-  font-weight: 600;
-  color: var(--black);
-  font-size: 32px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.element-portfolio .client-card-mobile {
-  display: flex;
-  width: 315px;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 30px 50px 30px 30px;
-  position: relative;
-  background-color: #fffcf5;
-  border: 1.5px solid;
-  border-color: #ffd285;
-}
-
-.element-portfolio .client-card {
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 80px;
-  align-self: stretch;
-  margin-right: -28.00px;
-  display: inline-flex;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.element-portfolio .text-wrapper-8 {
-  width: 263px;
-  margin-top: -1.00px;
-  font-weight: var(--subtitle-font-weight);
-  font-size: var(--subtitle-font-size);
-  line-height: var(--subtitle-line-height);
-  position: relative;
-  font-family: var(--subtitle-font-family);
-  color: var(--black);
-  letter-spacing: var(--subtitle-letter-spacing);
-  font-style: var(--subtitle-font-style);
-}
-
-.element-portfolio .client-info {
   align-items: flex-start;
   gap: 20px;
-  display: inline-flex;
   position: relative;
   flex: 0 0 auto;
 }
 
-.element-portfolio .author-images {
+.element-about-page .image {
   position: relative;
-  width: 50px;
-  height: 50px;
-  border-radius: 100px;
-  border: 1px solid;
-  border-color: #d7d7d7;
-  background: url(https://c.animaapp.com/mbwjqn0mP4Q2Ww/img/author-images-4.png)
-    50% 50% / cover;
+  width: 195px;
+  height: 195px;
+  background-image: url(./img/image.png);
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
-.element-portfolio .rate {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-  position: relative;
-  flex: 0 0 auto;
+.element-about-page .image-outline {
+  height: 195px;
+  border: 1.5px solid;
+  border-color: #2d2d2d;
 }
 
-.element-portfolio .rate-stars {
-  display: inline-flex;
-  align-items: flex-start;
-  gap: 5px;
+.element-about-page .designer-full-name {
   position: relative;
-  flex: 0 0 auto;
-}
-
-.element-portfolio .star {
-  position: relative;
-  width: 20px;
-  height: 20px;
-}
-
-.element-portfolio .star-2 {
-  position: absolute;
-  width: 17px;
-  height: 16px;
-  top: 1px;
-  left: 2px;
-}
-
-.element-portfolio .gemma-nolen-google {
-  position: relative;
-  width: 193px;
-  font-family: var(--body-text-font-family);
-  font-weight: var(--body-text-font-weight);
+  width: 195px;
+  height: 82.52px;
+  font-family: "Epilogue-Bold", Helvetica;
+  font-weight: 400;
   color: var(--black);
-  font-size: var(--body-text-font-size);
+  font-size: 17px;
+  letter-spacing: 0;
+  line-height: 27px;
+}
+
+.element-about-page .span {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.element-about-page .text-wrapper-4 {
+  font-family: var(--body-text-font-family);
+  font-style: var(--body-text-font-style);
+  font-weight: var(--body-text-font-weight);
   letter-spacing: var(--body-text-letter-spacing);
   line-height: var(--body-text-line-height);
-  font-style: var(--body-text-font-style);
+  font-size: var(--body-text-font-size);
 }
 
-.element-portfolio .author-images-2 {
-  background: url(https://c.animaapp.com/mbwjqn0mP4Q2Ww/img/author-images-5.png)
-    50% 50% / cover;
+.element-about-page .bio-text {
   position: relative;
-  width: 50px;
-  height: 50px;
-  border-radius: 100px;
-  border: 1px solid;
-  border-color: #d7d7d7;
+  width: 515px;
+  font-family: "Epilogue-Bold", Helvetica;
+  font-weight: 400;
+  color: var(--black);
+  font-size: 17px;
+  letter-spacing: 0;
+  line-height: 27px;
 }
 
-.element-portfolio .author-images-3 {
-  background: url(https://c.animaapp.com/mbwjqn0mP4Q2Ww/img/author-images-6.png)
-    50% 50% / cover;
+.element-about-page .text-wrapper-5 {
+  font-weight: 700;
+}
+
+.element-about-page .body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 120px 320px;
   position: relative;
-  width: 50px;
-  height: 50px;
-  border-radius: 100px;
-  border: 1px solid;
-  border-color: #d7d7d7;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: #ffffff;
 }
 
-.element-portfolio .footer {
+.element-about-page .body-text {
+  display: flex;
+  flex-direction: column;
+  width: 880px;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  position: relative;
+  margin-left: -120.00px;
+  margin-right: -120.00px;
+}
+
+.element-about-page .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 60px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.element-about-page .title {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: "Epilogue-Medium", Helvetica;
+  font-weight: 500;
+  color: #2b2b2b;
+  font-size: 24px;
+  letter-spacing: 1.00px;
+  line-height: 36px;
+}
+
+.element-about-page .body-text-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.element-about-page .colored-text {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 5px 0px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: #009379;
+}
+
+.element-about-page .paragraph {
+  position: relative;
+  flex: 1;
+  margin-top: -1.00px;
+  font-family: "Epilogue-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #f6dce9;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 26px;
+}
+
+.element-about-page .paragraph-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 5px 0px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.element-about-page .p {
+  position: relative;
+  flex: 1;
+  margin-top: -1.00px;
+  font-family: "Epilogue-Regular", Helvetica;
+  font-weight: 400;
+  color: #2b2b2b;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 26px;
+}
+
+.element-about-page .footer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -607,7 +294,7 @@
   background-color: #ffffff;
 }
 
-.element-portfolio .footer-info {
+.element-about-page .footer-info {
   align-items: center;
   gap: 70px;
   padding: 70px 0px 0px;
@@ -620,7 +307,7 @@
   flex: 0 0 auto;
 }
 
-.element-portfolio .footer-info-2 {
+.element-about-page .footer-info-2 {
   display: inline-flex;
   align-items: flex-start;
   gap: 190px;
@@ -628,7 +315,7 @@
   flex: 0 0 auto;
 }
 
-.element-portfolio .contact-info {
+.element-about-page .contact-info {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
@@ -637,7 +324,16 @@
   flex: 0 0 auto;
 }
 
-.element-portfolio .text-wrapper-9 {
+.element-about-page .div-3 {
+  align-items: flex-start;
+  gap: 40px;
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.element-about-page .text-wrapper-6 {
   position: relative;
   width: 360px;
   margin-top: -1.00px;
@@ -650,25 +346,25 @@
   font-style: var(--h2-font-style);
 }
 
-.element-portfolio .text-wrapper-10 {
-  width: 360px;
-  font-weight: var(--body-text-font-weight);
-  font-size: var(--body-text-font-size);
-  line-height: var(--body-text-line-height);
+.element-about-page .text-wrapper-7 {
   position: relative;
+  width: 360px;
   font-family: var(--body-text-font-family);
+  font-weight: var(--body-text-font-weight);
   color: #2d2d2d;
+  font-size: var(--body-text-font-size);
   letter-spacing: var(--body-text-letter-spacing);
+  line-height: var(--body-text-line-height);
   font-style: var(--body-text-font-style);
 }
 
-.element-portfolio .social-icons {
+.element-about-page .social-icons {
   position: relative;
   width: 232px;
   height: 36px;
 }
 
-.element-portfolio .nstagram {
+.element-about-page .nstagram {
   position: absolute;
   width: 36px;
   height: 36px;
@@ -676,7 +372,15 @@
   left: 147px;
 }
 
-.element-portfolio .behance-2 {
+.element-about-page .vector {
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  top: 5px;
+  left: 5px;
+}
+
+.element-about-page .behance {
   position: absolute;
   width: 36px;
   height: 36px;
@@ -684,7 +388,15 @@
   left: 196px;
 }
 
-.element-portfolio .dribbble-2 {
+.element-about-page .img {
+  position: absolute;
+  width: 30px;
+  height: 19px;
+  top: 9px;
+  left: 3px;
+}
+
+.element-about-page .dribbble {
   position: absolute;
   width: 36px;
   height: 36px;
@@ -692,7 +404,15 @@
   left: 98px;
 }
 
-.element-portfolio .facebook {
+.element-about-page .vector-2 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 3px;
+  left: 3px;
+}
+
+.element-about-page .facebook {
   position: absolute;
   width: 36px;
   height: 36px;
@@ -700,7 +420,15 @@
   left: 49px;
 }
 
-.element-portfolio .discord {
+.element-about-page .vector-3 {
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  top: 4px;
+  left: 4px;
+}
+
+.element-about-page .discord {
   position: absolute;
   width: 36px;
   height: 36px;
@@ -708,16 +436,15 @@
   left: 0;
 }
 
-.element-portfolio .text-fields {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
-  position: relative;
-  flex: 0 0 auto;
+.element-about-page .vector-4 {
+  position: absolute;
+  width: 25px;
+  height: 28px;
+  top: 4px;
+  left: 4px;
 }
 
-.element-portfolio .text-input-desktop {
+.element-about-page .text-input-desktop {
   width: 530px;
   padding: 21px 30px;
   position: relative;
@@ -736,7 +463,7 @@
   font-style: var(--body-text-font-style);
 }
 
-.element-portfolio .write-something-wrapper {
+.element-about-page .write-something-wrapper {
   display: flex;
   width: 530px;
   align-items: flex-start;
@@ -747,7 +474,7 @@
   background-color: #f3f3f3;
 }
 
-.element-portfolio .write-something {
+.element-about-page .write-something {
   position: relative;
   flex: 1;
   flex-grow: 1;
@@ -765,11 +492,11 @@
   font-style: var(--body-text-font-style);
 }
 
-.element-portfolio .write-something::placeholder {
+.element-about-page .write-something::placeholder {
   color: #2d2d2d99;
 }
 
-.element-portfolio .button {
+.element-about-page .button {
   all: unset;
   box-sizing: border-box;
   display: inline-flex;
@@ -781,11 +508,11 @@
   background-color: var(--black);
 }
 
-.element-portfolio .text-wrapper-11 {
+.element-about-page .text-wrapper-8 {
   position: relative;
   width: fit-content;
   margin-top: -1.00px;
-  font-family: "Epilogue", Helvetica;
+  font-family: "Epilogue-SemiBold", Helvetica;
   font-weight: 600;
   color: var(--white);
   font-size: 20px;
