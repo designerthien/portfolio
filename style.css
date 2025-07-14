@@ -1,742 +1,674 @@
-.element-portfolio {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  position: relative;
-}
-
-.element-portfolio .frame {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.element-portfolio .navigation {
-  position: relative;
-  width: 1280px;
-  height: 80px;
-  background-color: #ffffff;
-}
-
-.element-portfolio .asset {
-  position: absolute;
-  width: 91px;
-  height: 80px;
-  top: 0;
-  left: 15px;
-  object-fit: cover;
-}
-
-.element-portfolio .menu {
-  position: absolute;
-  width: 25px;
-  height: 23px;
-  top: 29px;
-  left: 1207px;
-}
-
-.element-portfolio .ellipse {
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  top: 0;
-  left: 17px;
-  background-color: #2d2d2d;
-  border-radius: 4px;
-}
-
-.element-portfolio .div {
-  top: 15px;
-  left: 17px;
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  background-color: #2d2d2d;
-  border-radius: 4px;
-}
-
-.element-portfolio .ellipse-2 {
-  top: 0;
-  left: 0;
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  background-color: #2d2d2d;
-  border-radius: 4px;
-}
-
-.element-portfolio .ellipse-3 {
-  top: 15px;
-  left: 0;
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  background-color: #2d2d2d;
-  border-radius: 4px;
-}
-
-.element-portfolio .frame-2 {
-  display: flex;
-  flex-direction: column;
-  width: 1280px;
-  align-items: flex-start;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.element-portfolio .header {
-  display: flex;
-  flex-direction: column;
-  height: 755px;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 100px;
-  position: relative;
-  align-self: stretch;
-  width: 1280px;
-  background-color: #ffffff;
-  overflow: hidden;
-}
-
-.element-portfolio .image {
-  position: absolute;
-  width: 510px;
-  height: 435px;
-  top: 100px;
-  right: 100px;
-  left: auto;
-  object-fit: cover;
-  border-radius: 30px;
-}
-
-.element-portfolio .headline-subhead {
-  position: relative;
-  width: 557px;
-  height: 380px;
-  z-index: 1;
-  margin-bottom: 40px;
-}
-
-.element-portfolio .headline-subhead-2 {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
-  position: relative;
-  top: 0;
-}
-
-.element-portfolio .text-wrapper {
-  position: relative;
-  width: 557px;
-  margin-top: -1.00px;
-  font-family: "Epilogue", Helvetica;
-  font-weight: 600;
-  color: var(--colorsorange);
-  font-size: 128px;
-  letter-spacing: 0;
-  line-height: 128px;
-}
-
-.element-portfolio .i-am-robert-s-le {
-  position: relative;
-  width: 557px;
-  font-family: "Epilogue", Helvetica;
-  font-weight: 600;
-  color: var(--black);
-  font-size: 64px;
-  letter-spacing: 0;
-  line-height: 76px;
-  margin-bottom: 20px;
-}
-
-.element-portfolio .and-i-made-it-myself {
-  position: relative;
-  width: 557px;
-  font-family: var(--body-text-font-family);
-  font-weight: var(--body-text-font-weight);
-  color: var(--black);
-  font-size: var(--body-text-font-size);
-  letter-spacing: var(--body-text-letter-spacing);
-  line-height: var(--body-text-line-height);
-  font-style: var(--body-text-font-style);
-  z-index: 1;
-  margin-top: 40px;
-}
-
-.element-portfolio .union {
-  position: absolute;
-  width: 49px;
-  height: 49px;
-  bottom: 60px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-}
-
-.element-portfolio .text-wrapper-2 {
-  position: absolute;
-  width: 419px;
-  height: 90px;
-  bottom: 120px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: "Epilogue", Helvetica;
-  font-weight: 600;
-  color: var(--colorsorange);
-  font-size: 80px;
-  letter-spacing: 0;
-  line-height: 90px;
-  white-space: nowrap;
-  text-align: center;
-  z-index: 1;
-}
-
-.element-portfolio .logos-section {
-  display: flex;
-  height: 263px;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 0px 80px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  background-color: #ffffff;
-}
-
-.element-portfolio .logos {
-  position: relative;
-  width: 1120px;
-  height: 247px;
-}
-
-.element-portfolio .skills-section {
-  display: flex;
-  flex-direction: column;
-  height: 543px;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 180px 140px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  background-color: #ffffff;
-}
-
-.element-portfolio .skills {
-  display: inline-flex;
-  align-items: flex-start;
-  gap: 125px;
-  position: relative;
-  flex: 0 0 auto;
-  margin-top: -99.50px;
-  margin-bottom: -99.50px;
-}
-
-.element-portfolio .skill {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 56px;
-  position: relative;
-  flex: 0 0 auto;
-  transition: all 0.2s ease;
-}
-
-.element-portfolio .skill:hover {
-  transform: translate(0, -5px);
-}
-
-.element-portfolio .skill-2 {
-  gap: 56px;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.element-portfolio .image-placeholder {
-  position: relative;
-  width: 130px;
-  height: 130px;
-  box-shadow: 0px 4px 4px #6d7bea40;
-  background: linear-gradient(
-      180deg,
-      rgba(255, 223, 15, 0) 0%,
-      rgba(255, 223, 15, 0.2) 100%
-    ), url(https://c.animaapp.com/md2qngs8fkuHHI/img/image-placeholder.png) 50%
-    50% / cover;
-  border-radius: 30px;
-}
-
-.element-portfolio .headline-subhead-3 {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 19px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.element-portfolio .main-title {
-  position: relative;
-  width: 249.9px;
-  margin-top: -1.00px;
-  font-family: var(--h3-font-family);
-  font-weight: var(--h3-font-weight);
-  color: var(--black);
-  font-size: var(--h3-font-size);
-  text-align: center;
-  letter-spacing: var(--h3-letter-spacing);
-  line-height: var(--h3-line-height);
-  font-style: var(--h3-font-style);
-}
-
-.element-portfolio .this-is-a-template {
-  position: relative;
-  width: 249.9px;
-  font-family: var(--body-text-font-family);
-  font-weight: var(--body-text-font-weight);
-  color: var(--black);
-  font-size: var(--body-text-font-size);
-  text-align: center;
-  letter-spacing: var(--body-text-letter-spacing);
-  line-height: var(--body-text-line-height);
-  font-style: var(--body-text-font-style);
-}
-
-.element-portfolio .skill-wrapper {
-  gap: 54px;
-  transition: all 0.2s ease;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.element-portfolio .skill-wrapper:hover {
-  transform: translate(0, -5px);
-}
-
-.element-portfolio .image-placeholder-2 {
-  background: linear-gradient(
-      180deg,
-      rgba(255, 0, 0, 0) 0%,
-      rgba(255, 0, 0, 0.2) 100%
-    ), url(https://c.animaapp.com/md2qngs8fkuHHI/img/image-placeholder-1.png)
-    50% 50% / cover;
-  position: relative;
-  width: 130px;
-  height: 130px;
-  border-radius: 30px;
-}
-
-.element-portfolio .image-placeholder-3 {
-  background: linear-gradient(
-      180deg,
-      rgba(42, 81, 254, 0) 0%,
-      rgba(42, 81, 254, 0.2) 100%
-    ), url(https://c.animaapp.com/md2qngs8fkuHHI/img/image-placeholder-2.png)
-    50% 50% / cover;
-  position: relative;
-  width: 130px;
-  height: 130px;
-  border-radius: 30px;
-}
-
-.element-portfolio .latest-work-section {
-  display: flex;
-  flex-direction: column;
-  min-width: 1280px;
-  max-width: 1280px;
-  align-items: center;
-  gap: 120px;
-  padding: 40px 100px;
-  position: relative;
-  width: 100%;
-  flex: 0 0 auto;
-  background-color: #ffffff;
-}
-
-.element-portfolio .img {
-  position: absolute;
-  width: 1286px;
-  height: 103px;
-  top: 40px;
-  left: -3px;
-}
-
-.element-portfolio .my-latest-work {
-  position: relative;
-  width: fit-content;
-  margin-top: -1.00px;
-  font-family: "Epilogue", Helvetica;
-  font-weight: 600;
-  color: var(--colorsorange);
-  font-size: 48px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: 42px;
-  white-space: nowrap;
-}
-
-.element-portfolio .work-cards-mobile {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 150px;
-  position: relative;
-  flex: 0 0 auto;
-  margin-left: -57.00px;
-  margin-right: -57.00px;
-}
-
-.element-portfolio .work-card {
-  height: 8px;
-  display: flex;
-  flex-direction: column;
-  width: 1194px;
-  align-items: flex-start;
-  gap: 25px;
-  position: relative;
-}
-
-.element-portfolio .work-card-2 {
-  display: flex;
-  flex-direction: column;
-  width: 1194px;
-  align-items: flex-start;
-  gap: 25px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.element-portfolio .frame-wrapper {
-  display: flex;
-  align-items: flex-start;
-  gap: 25px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  flex: 0 0 auto;
-}
-
-.element-portfolio .frame-3 {
-  display: flex;
-  width: 1194px;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-}
-
-.element-portfolio .image-wrapper {
-  display: inline-flex;
-  align-items: flex-start;
-  gap: 25px;
-  position: relative;
-  flex: 0 0 auto;
-  border-radius: 30px;
-  overflow: hidden;
-}
-
-.element-portfolio .image-2 {
-  position: relative;
-  width: 680px;
-  height: 680px;
-  border-radius: 30px;
-  object-fit: cover;
-}
-
-.element-portfolio .frame-4 {
-  display: flex;
-  flex-direction: column;
-  width: 489px;
-  height: 680px;
-  align-items: flex-start;
-  justify-content: space-between;
-  position: relative;
-}
-
-.element-portfolio .headline-subhead-4 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  flex: 0 0 auto;
-}
-
-.element-portfolio .text-wrapper-3 {
-  position: relative;
-  width: 315px;
-  margin-top: -1.00px;
-  font-family: var(--subtitle-font-family);
-  font-weight: var(--subtitle-font-weight);
-  color: var(--black);
-  font-size: var(--subtitle-font-size);
-  letter-spacing: var(--subtitle-letter-spacing);
-  line-height: var(--subtitle-line-height);
-  font-style: var(--subtitle-font-style);
-}
-
-.element-portfolio .text {
-  position: relative;
-  align-self: stretch;
-  font-family: var(--body-text-font-family);
-  font-weight: var(--body-text-font-weight);
-  color: var(--black);
-  font-size: var(--body-text-font-size);
-  letter-spacing: var(--body-text-letter-spacing);
-  line-height: var(--body-text-line-height);
-  font-style: var(--body-text-font-style);
-}
-
-.element-portfolio .headline-subhead-5 {
-  display: flex;
-  flex-direction: column;
-  width: 408px;
-  height: 87px;
-  align-items: flex-start;
-  gap: 10px;
-  position: relative;
-}
-
-.element-portfolio .UI-art-drection {
-  position: relative;
-  width: 315px;
-  margin-bottom: -6.00px;
-  font-family: var(--body-text-font-family);
-  font-weight: var(--body-text-font-weight);
-  color: var(--black);
-  font-size: var(--body-text-font-size);
-  letter-spacing: var(--body-text-letter-spacing);
-  line-height: var(--body-text-line-height);
-  font-style: var(--body-text-font-style);
-}
-
-.element-portfolio .image-3 {
-  position: relative;
-  width: 680px;
-  height: 680px;
-  border-radius: 30px;
-  object-fit: cover;
-}
-
-.element-portfolio .work-card-3 {
-  height: 1px;
-  display: flex;
-  flex-direction: column;
-  width: 1194px;
-  align-items: flex-start;
-  gap: 25px;
-  position: relative;
-}
-
-.element-portfolio .footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  padding: 0px 100px 70px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  flex: 0 0 auto;
-  background-color: #ffffff;
-}
-
-.element-portfolio .footer-info {
-  align-items: center;
-  gap: 70px;
-  padding: 70px 0px 0px;
-  border-top-width: 2px;
-  border-top-style: solid;
-  border-color: #00000033;
-  display: inline-flex;
-  flex-direction: column;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.element-portfolio .footer-info-2 {
-  display: inline-flex;
-  align-items: flex-start;
-  gap: 190px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.element-portfolio .contact-info {
-  display: inline-flex;
-  flex-direction: column;
-  height: 466px;
-  align-items: flex-start;
-  gap: 60px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.element-portfolio .div-2 {
-  align-items: flex-start;
-  gap: 40px;
-  display: inline-flex;
-  flex-direction: column;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.element-portfolio .let-s-work-together {
-  position: relative;
-  width: 360px;
-  height: 201px;
-  margin-top: -1.00px;
-  font-family: "Epilogue", Helvetica;
-  font-weight: 800;
-  color: var(--colorsorange);
-  font-size: 64px;
-  letter-spacing: 0;
-  line-height: 62px;
-}
-
-.element-portfolio .whether-you-re {
-  position: relative;
-  width: 360px;
-  font-family: var(--body-text-font-family);
-  font-weight: var(--body-text-font-weight);
-  color: transparent;
-  font-size: var(--body-text-font-size);
-  letter-spacing: var(--body-text-letter-spacing);
-  line-height: var(--body-text-line-height);
-  font-style: var(--body-text-font-style);
-}
-
-.element-portfolio .span {
-  color: #2d2d2d;
-  font-family: var(--body-text-font-family);
-  font-style: var(--body-text-font-style);
-  font-weight: var(--body-text-font-weight);
-  letter-spacing: var(--body-text-letter-spacing);
-  line-height: var(--body-text-line-height);
-  font-size: var(--body-text-font-size);
-}
-
-.element-portfolio .text-wrapper-4 {
-  color: #c57804;
-  font-family: var(--body-text-font-family);
-  font-style: var(--body-text-font-style);
-  font-weight: var(--body-text-font-weight);
-  letter-spacing: var(--body-text-letter-spacing);
-  line-height: var(--body-text-line-height);
-  font-size: var(--body-text-font-size);
-}
-
-.element-portfolio .social-icons {
-  position: relative;
-  width: 232px;
-  height: 36px;
-  margin-bottom: -60.00px;
-}
-
-.element-portfolio .text-fields {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.element-portfolio .text-input-desktop {
-  width: 530px;
-  padding: 21px 30px;
-  position: relative;
-  background-color: #f3f3f3;
-  border: 0;
-  flex: 1;
-  flex-grow: 1;
-  height: 27px;
-  margin-top: -1.00px;
-  font-family: var(--body-text-font-family);
-  font-weight: var(--body-text-font-weight);
-  color: #2d2d2d;
-  font-size: var(--body-text-font-size);
-  letter-spacing: var(--body-text-letter-spacing);
-  line-height: var(--body-text-line-height);
-  font-style: var(--body-text-font-style);
-}
-
-.element-portfolio .write-something-wrapper {
-  display: flex;
-  width: 530px;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 21px 30px;
-  position: relative;
-  flex: 0 0 auto;
-  background-color: #f3f3f3;
-}
-
-.element-portfolio .write-something {
-  position: relative;
-  flex: 1;
-  flex-grow: 1;
-  height: 189px;
-  margin-top: -1.00px;
-  background-color: transparent;
-  font-family: var(--body-text-font-family);
-  font-weight: var(--body-text-font-weight);
-  color: #2d2d2d;
-  font-size: var(--body-text-font-size);
-  letter-spacing: var(--body-text-letter-spacing);
-  line-height: var(--body-text-line-height);
-  border: 0;
-  padding: 0;
-  font-style: var(--body-text-font-style);
-}
-
-.element-portfolio .write-something::placeholder {
-  color: #2d2d2d99;
-}
-
-.element-portfolio .button {
-  all: unset;
-  box-sizing: border-box;
-  display: inline-flex;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 25px 82px;
-  position: relative;
-  flex: 0 0 auto;
-  background-color: var(--colorsorange);
-}
-
-.element-portfolio .text-wrapper-5 {
-  position: relative;
-  width: fit-content;
-  margin-top: -1.00px;
-  font-family: "Epilogue", Helvetica;
-  font-weight: 600;
-  color: var(--labelsprimary);
-  font-size: 20px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: 30px;
-  white-space: nowrap;
-}
-
-.element-portfolio,
-.element-portfolio .frame-2,
-.element-portfolio .header,
-.element-portfolio .latest-work-section,
-.element-portfolio .footer {
-  margin-left: auto;
-  margin-right: auto;
-}
-/* Center all main frames */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;800&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Epilogue', sans-serif;
+            background-color: #ffffff;
+            color: #2d2d2d;
+            overflow-x: hidden;
+        }
+        
+        /* Container to center everything at 1280px */
+        .container-1280 {
+            max-width: 1280px;
+            margin: 0 auto;
+            width: 100%;
+        }
+        
+        /* Navigation */
+        .navigation {
+            height: 80px;
+            background-color: #ffffff;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 15px;
+        }
+        
+        .asset {
+            width: 91px;
+            height: 80px;
+            object-fit: cover;
+        }
+        
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            width: 25px;
+            height: 23px;
+            position: relative;
+        }
+        
+        .ellipse, .div, .ellipse-2, .ellipse-3 {
+            width: 8px;
+            height: 8px;
+            background-color: #2d2d2d;
+            border-radius: 4px;
+            position: absolute;
+        }
+        
+        .ellipse { top: 0; left: 17px; }
+        .div { top: 15px; left: 17px; }
+        .ellipse-2 { top: 0; left: 0; }
+        .ellipse-3 { top: 15px; left: 0; }
+        
+        /* Header Section */
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 100px 0;
+            position: relative;
+            min-height: 755px;
+        }
+        
+        .headline-subhead {
+            position: relative;
+            z-index: 1;
+            margin-bottom: 40px;
+            max-width: 557px;
+        }
+        
+        .tagline {
+            font-weight: 600;
+            color: #C57804;
+            font-size: 128px;
+            line-height: 128px;
+            margin-bottom: 20px;
+        }
+        
+        .headline {
+            font-weight: 600;
+            color: #2d2d2d;
+            font-size: 64px;
+            line-height: 76px;
+            margin-bottom: 20px;
+        }
+        
+        .subhead {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #2d2d2d;
+            max-width: 557px;
+        }
+        
+        .image {
+            position: absolute;
+            top: 100px;
+            right: 0;
+            width: 510px;
+            height: 435px;
+            object-fit: cover;
+            border-radius: 30px;
+        }
+        
+        .union {
+            position: absolute;
+            bottom: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 49px;
+            height: 49px;
+            z-index: 1;
+        }
+        
+        .text-wrapper-2 {
+            position: absolute;
+            bottom: 120px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-weight: 600;
+            color: #C57804;
+            font-size: 80px;
+            line-height: 90px;
+            text-align: center;
+            z-index: 1;
+            white-space: nowrap;
+        }
+        
+        /* Logos Section */
+        .logos-section {
+            height: 263px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 80px;
+        }
+        
+        .logos {
+            width: 100%;
+            height: 247px;
+            background: #f0f0f0;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            font-size: 18px;
+        }
+        
+        /* Skills Section */
+        .skills-section {
+            padding: 180px 140px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .skills {
+            display: flex;
+            justify-content: center;
+            gap: 125px;
+            width: 100%;
+        }
+        
+        .skill {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 56px;
+            transition: all 0.2s ease;
+            max-width: 250px;
+        }
+        
+        .skill:hover {
+            transform: translateY(-5px);
+        }
+        
+        .image-placeholder {
+            width: 130px;
+            height: 130px;
+            border-radius: 30px;
+            background: linear-gradient(180deg, rgba(255, 223, 15, 0) 0%, rgba(255, 223, 15, 0.2) 100%), #f0f0f0;
+            box-shadow: 0px 4px 4px rgba(109, 123, 234, 0.25);
+        }
+        
+        .headline-subhead-3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 19px;
+        }
+        
+        .main-title {
+            font-size: 24px;
+            font-weight: 600;
+            text-align: center;
+            color: #2d2d2d;
+        }
+        
+        .skill-description {
+            font-size: 16px;
+            text-align: center;
+            color: #2d2d2d;
+            line-height: 1.6;
+        }
+        
+        /* Latest Work Section */
+        .latest-work-section {
+            padding: 40px 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 120px;
+        }
+        
+        .section-title {
+            position: relative;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .my-latest-work {
+            font-weight: 600;
+            color: #C57804;
+            font-size: 48px;
+            line-height: 42px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 103px;
+            z-index: 0;
+            opacity: 0.1;
+        }
+        
+        .work-cards-mobile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 150px;
+            width: 100%;
+        }
+        
+        .work-card {
+            display: flex;
+            gap: 25px;
+            width: 100%;
+            max-width: 1194px;
+        }
+        
+        .work-card:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        
+        .image-wrapper {
+            flex: 1;
+            border-radius: 30px;
+            overflow: hidden;
+        }
+        
+        .project-image {
+            width: 100%;
+            height: 680px;
+            object-fit: cover;
+            border-radius: 30px;
+        }
+        
+        .frame-4 {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px 0;
+        }
+        
+        .headline-subhead-4 {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .text-wrapper-3 {
+            font-size: 32px;
+            font-weight: 600;
+            color: #2d2d2d;
+        }
+        
+        .text {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #2d2d2d;
+        }
+        
+        .headline-subhead-5 {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        /* Footer */
+        .footer {
+            padding: 0 100px 70px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .footer-info {
+            width: 100%;
+            padding-top: 70px;
+            border-top: 2px solid rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 70px;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1280px;
+        }
+        
+        .contact-info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+        }
+        
+        .contact-text {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+        
+        .let-s-work-together {
+            font-weight: 800;
+            color: #C57804;
+            font-size: 64px;
+            line-height: 62px;
+            max-width: 360px;
+        }
+        
+        .whether-you-re {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #2d2d2d;
+            max-width: 360px;
+        }
+        
+        .text-wrapper-4 {
+            color: #C57804;
+        }
+        
+        .social-icons {
+            width: 232px;
+            height: 36px;
+            display: flex;
+            gap: 20px;
+        }
+        
+        .social-icon {
+            width: 36px;
+            height: 36px;
+            background-color: #f0f0f0;
+            border-radius: 50%;
+        }
+        
+        .text-fields {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 530px;
+        }
+        
+        .text-input-desktop {
+            padding: 21px 30px;
+            background-color: #f3f3f3;
+            border: none;
+            font-size: 16px;
+            font-family: 'Epilogue', sans-serif;
+        }
+        
+        .write-something-wrapper {
+            padding: 21px 30px;
+            background-color: #f3f3f3;
+            min-height: 189px;
+        }
+        
+        .write-something {
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            resize: none;
+            font-size: 16px;
+            font-family: 'Epilogue', sans-serif;
+        }
+        
+        .button {
+            padding: 25px 82px;
+            background-color: #C57804;
+            border: none;
+            cursor: pointer;
+            align-self: flex-start;
+        }
+        
+        .text-wrapper-5 {
+            font-weight: 600;
+            color: white;
+            font-size: 20px;
+            line-height: 30px;
+            white-space: nowrap;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 1300px) {
+            .container-1280 {
+                padding: 0 20px;
+            }
+            
+            .header {
+                padding: 100px 20px;
+            }
+            
+            .image {
+                position: relative;
+                top: auto;
+                right: auto;
+                width: 100%;
+                max-width: 510px;
+                margin-top: 40px;
+            }
+            
+            .skills {
+                flex-wrap: wrap;
+                gap: 60px;
+            }
+            
+            .work-card {
+                flex-direction: column;
+            }
+            
+            .work-card:nth-child(even) {
+                flex-direction: column;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+                gap: 60px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header {
+                min-height: auto;
+                padding: 60px 20px;
+            }
+            
+            .tagline {
+                font-size: 64px;
+                line-height: 64px;
+            }
+            
+            .headline {
+                font-size: 36px;
+                line-height: 42px;
+            }
+            
+            .text-wrapper-2 {
+                font-size: 40px;
+                line-height: 48px;
+            }
+            
+            .skills-section {
+                padding: 60px 20px;
+            }
+            
+            .latest-work-section {
+                padding: 40px 20px;
+                gap: 80px;
+            }
+            
+            .my-latest-work {
+                font-size: 36px;
+            }
+            
+            .footer {
+                padding: 0 20px 40px;
+            }
+            
+            .let-s-work-together {
+                font-size: 36px;
+                line-height: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="container-1280">
+        <div class="navigation">
+            <img class="asset" src="https://via.placeholder.com/91x80" alt="Logo">
+            <div class="menu">
+                <div class="ellipse"></div>
+                <div class="div"></div>
+                <div class="ellipse-2"></div>
+                <div class="ellipse-3"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Header Section -->
+    <div class="container-1280">
+        <div class="header">
+            <div class="headline-subhead">
+                <div class="tagline">PORTFOLIO</div>
+                <div class="headline">I am Robert S. Le</div>
+                <div class="subhead">And I made it myself. This is a template made with Anima. You can use it for free in your project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            </div>
+            
+            <img class="image" src="https://via.placeholder.com/510x435" alt="Profile">
+            <div class="union"></div>
+            <div class="text-wrapper-2">Scroll down</div>
+        </div>
+    </div>
+    
+    <!-- Logos Section -->
+    <div class="container-1280">
+        <div class="logos-section">
+            <div class="logos">Client Logos Placeholder</div>
+        </div>
+    </div>
+    
+    <!-- Skills Section -->
+    <div class="container-1280">
+        <div class="skills-section">
+            <div class="skills">
+                <div class="skill">
+                    <div class="image-placeholder"></div>
+                    <div class="headline-subhead-3">
+                        <div class="main-title">UI/UX Design</div>
+                        <div class="skill-description">This is a template made with Anima. You can use it for free in your project.</div>
+                    </div>
+                </div>
+                
+                <div class="skill">
+                    <div class="image-placeholder"></div>
+                    <div class="headline-subhead-3">
+                        <div class="main-title">Web Development</div>
+                        <div class="skill-description">This is a template made with Anima. You can use it for free in your project.</div>
+                    </div>
+                </div>
+                
+                <div class="skill">
+                    <div class="image-placeholder"></div>
+                    <div class="headline-subhead-3">
+                        <div class="main-title">Brand Identity</div>
+                        <div class="skill-description">This is a template made with Anima. You can use it for free in your project.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Latest Work Section -->
+    <div class="container-1280">
+        <div class="latest-work-section">
+            <div class="section-title">
+                <div class="img"></div>
+                <div class="my-latest-work">My Latest Work</div>
+            </div>
+            
+            <div class="work-cards-mobile">
+                <!-- Project 1 -->
+                <div class="work-card">
+                    <div class="image-wrapper">
+                        <img class="project-image" src="https://via.placeholder.com/680x680" alt="Project">
+                    </div>
+                    
+                    <div class="frame-4">
+                        <div class="headline-subhead-4">
+                            <div class="text-wrapper-3">Project Title</div>
+                            <div class="text">This is a template made with Anima. You can use it for free in your project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        </div>
+                        
+                        <div class="headline-subhead-5">
+                            <div class="text">UI Art Direction</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="work-card">
+                    <div class="image-wrapper">
+                        <img class="project-image" src="https://via.placeholder.com/680x680" alt="Project">
+                    </div>
+                    
+                    <div class="frame-4">
+                        <div class="headline-subhead-4">
+                            <div class="text-wrapper-3">Project Title</div>
+                            <div class="text">This is a template made with Anima. You can use it for free in your project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        </div>
+                        
+                        <div class="headline-subhead-5">
+                            <div class="text">UI Art Direction</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="container-1280">
+        <div class="footer">
+            <div class="footer-info">
+                <div class="footer-content">
+                    <div class="contact-info">
+                        <div class="contact-text">
+                            <div class="let-s-work-together">Let's work together</div>
+                            <div class="whether-you-re">
+                                <span class="span">Whether you're looking for a designer, developer, or both, I'm here to help. </span>
+                                <span class="text-wrapper-4">Let's talk!</span>
+                            </div>
+                        </div>
+                        
+                        <div class="social-icons">
+                            <div class="social-icon"></div>
+                            <div class="social-icon"></div>
+                            <div class="social-icon"></div>
+                            <div class="social-icon"></div>
+                            <div class="social-icon"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-fields">
+                        <input type="text" class="text-input-desktop" placeholder="Name">
+                        <input type="email" class="text-input-desktop" placeholder="Email">
+                        <div class="write-something-wrapper">
+                            <textarea class="write-something" placeholder="Message"></textarea>
+                        </div>
+                        <button class="button">
+                            <div class="text-wrapper-5">Send Message</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
