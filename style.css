@@ -730,3 +730,13 @@
   line-height: 30px;
   white-space: nowrap;
 }
+
+.element-portfolio,
+.element-portfolio .frame-2,
+.element-portfolio .header,
+.element-portfolio .latest-work-section,
+.element-portfolio .footer {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Center all main frames */
