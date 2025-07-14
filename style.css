@@ -1,18 +1,26 @@
-.frame {
+.element-portfolio {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
   position: relative;
 }
 
-.frame .navigation {
+.element-portfolio .frame {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.element-portfolio .navigation {
   position: relative;
   width: 1280px;
   height: 80px;
   background-color: #ffffff;
 }
 
-.frame .asset {
+.element-portfolio .asset {
   position: absolute;
   width: 91px;
   height: 80px;
@@ -21,7 +29,7 @@
   object-fit: cover;
 }
 
-.frame .menu {
+.element-portfolio .menu {
   position: absolute;
   width: 25px;
   height: 23px;
@@ -29,7 +37,7 @@
   left: 1207px;
 }
 
-.frame .ellipse {
+.element-portfolio .ellipse {
   position: absolute;
   width: 8px;
   height: 8px;
@@ -39,7 +47,7 @@
   border-radius: 4px;
 }
 
-.frame .div {
+.element-portfolio .div {
   top: 15px;
   left: 17px;
   position: absolute;
@@ -49,7 +57,7 @@
   border-radius: 4px;
 }
 
-.frame .ellipse-2 {
+.element-portfolio .ellipse-2 {
   top: 0;
   left: 0;
   position: absolute;
@@ -59,7 +67,7 @@
   border-radius: 4px;
 }
 
-.frame .ellipse-3 {
+.element-portfolio .ellipse-3 {
   top: 15px;
   left: 0;
   position: absolute;
@@ -69,7 +77,7 @@
   border-radius: 4px;
 }
 
-.frame .div-2 {
+.element-portfolio .frame-2 {
   display: flex;
   flex-direction: column;
   width: 1280px;
@@ -78,7 +86,7 @@
   flex: 0 0 auto;
 }
 
-.frame .header {
+.element-portfolio .header {
   display: flex;
   flex-direction: column;
   height: 755px;
@@ -87,47 +95,52 @@
   padding: 100px;
   position: relative;
   align-self: stretch;
-  width: 100%;
+  width: 1280px;
   background-color: #ffffff;
+  overflow: hidden;
 }
 
-.frame .image {
+.element-portfolio .image {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 70px;
-  left: 708px;
+  width: 510px;
+  height: 435px;
+  top: 100px;
+  right: 100px;
+  left: auto;
   object-fit: cover;
+  border-radius: 30px;
 }
 
-.frame .headline-subhead {
+.element-portfolio .headline-subhead {
   position: relative;
   width: 557px;
-  height: 317px;
+  height: 380px;
+  z-index: 1;
+  margin-bottom: 40px;
 }
 
-.frame .headline-subhead-2 {
+.element-portfolio .headline-subhead-2 {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 40px;
+  gap: 20px;
   position: relative;
-  top: 67px;
+  top: 0;
 }
 
-.frame .text-wrapper {
+.element-portfolio .text-wrapper {
   position: relative;
   width: 557px;
   margin-top: -1.00px;
   font-family: "Epilogue", Helvetica;
   font-weight: 600;
-  color: #ff9500;
+  color: var(--colorsorange);
   font-size: 128px;
   letter-spacing: 0;
-  line-height: 30px;
+  line-height: 128px;
 }
 
-.frame .i-am-robert-s-le {
+.element-portfolio .i-am-robert-s-le {
   position: relative;
   width: 557px;
   font-family: "Epilogue", Helvetica;
@@ -135,10 +148,11 @@
   color: var(--black);
   font-size: 64px;
   letter-spacing: 0;
-  line-height: 90px;
+  line-height: 76px;
+  margin-bottom: 20px;
 }
 
-.frame .and-i-made-it-myself {
+.element-portfolio .and-i-made-it-myself {
   position: relative;
   width: 557px;
   font-family: var(--body-text-font-family);
@@ -148,32 +162,39 @@
   letter-spacing: var(--body-text-letter-spacing);
   line-height: var(--body-text-line-height);
   font-style: var(--body-text-font-style);
+  z-index: 1;
+  margin-top: 40px;
 }
 
-.frame .union {
+.element-portfolio .union {
   position: absolute;
   width: 49px;
   height: 49px;
-  top: 645px;
-  left: 849px;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
 }
 
-.frame .text-wrapper-2 {
+.element-portfolio .text-wrapper-2 {
   position: absolute;
   width: 419px;
   height: 90px;
-  top: 626px;
-  left: 419px;
+  bottom: 120px;
+  left: 50%;
+  transform: translateX(-50%);
   font-family: "Epilogue", Helvetica;
   font-weight: 600;
-  color: #ff9500;
+  color: var(--colorsorange);
   font-size: 80px;
   letter-spacing: 0;
   line-height: 90px;
   white-space: nowrap;
+  text-align: center;
+  z-index: 1;
 }
 
-.frame .logos-section {
+.element-portfolio .logos-section {
   display: flex;
   height: 263px;
   align-items: flex-start;
@@ -185,45 +206,13 @@
   background-color: #ffffff;
 }
 
-.frame .logos {
-  display: flex;
+.element-portfolio .logos {
+  position: relative;
   width: 1120px;
   height: 247px;
-  align-items: center;
-  justify-content: center;
-  gap: 153px;
-  padding: 60px 0px;
-  position: relative;
-  border-top-width: 2px;
-  border-top-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-style: solid;
-  border-color: #00000033;
 }
 
-.frame .img {
-  position: relative;
-  width: 89px;
-  height: 89px;
-  object-fit: cover;
-}
-
-.frame .figma-icon-mono-line {
-  position: relative;
-  width: 134px;
-  height: 167.5px;
-  margin-top: -20.25px;
-  margin-bottom: -20.25px;
-  object-fit: cover;
-}
-
-.frame .google {
-  position: relative;
-  width: 105.4px;
-  height: 34px;
-}
-
-.frame .skills-section {
+.element-portfolio .skills-section {
   display: flex;
   flex-direction: column;
   height: 543px;
@@ -237,7 +226,7 @@
   background-color: #ffffff;
 }
 
-.frame .skills {
+.element-portfolio .skills {
   display: inline-flex;
   align-items: flex-start;
   gap: 125px;
@@ -247,7 +236,7 @@
   margin-bottom: -99.50px;
 }
 
-.frame .skill {
+.element-portfolio .skill {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
@@ -257,11 +246,11 @@
   transition: all 0.2s ease;
 }
 
-.frame .skill:hover {
+.element-portfolio .skill:hover {
   transform: translate(0, -5px);
 }
 
-.frame .skill-2 {
+.element-portfolio .skill-2 {
   gap: 56px;
   display: inline-flex;
   flex-direction: column;
@@ -270,17 +259,21 @@
   flex: 0 0 auto;
 }
 
-.frame .image-placeholder {
+.element-portfolio .image-placeholder {
   position: relative;
   width: 130px;
   height: 130px;
   box-shadow: 0px 4px 4px #6d7bea40;
-  background-image: url(https://c.animaapp.com/q7zuOXVj/img/image-placeholder@2x.png);
-  background-size: cover;
-  background-position: 50% 50%;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 223, 15, 0) 0%,
+      rgba(255, 223, 15, 0.2) 100%
+    ), url(https://c.animaapp.com/md2qngs8fkuHHI/img/image-placeholder.png) 50%
+    50% / cover;
+  border-radius: 30px;
 }
 
-.frame .headline-subhead-3 {
+.element-portfolio .headline-subhead-3 {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
@@ -289,7 +282,7 @@
   flex: 0 0 auto;
 }
 
-.frame .main-title {
+.element-portfolio .main-title {
   position: relative;
   width: 249.9px;
   margin-top: -1.00px;
@@ -303,7 +296,7 @@
   font-style: var(--h3-font-style);
 }
 
-.frame .this-is-a-template {
+.element-portfolio .this-is-a-template {
   position: relative;
   width: 249.9px;
   font-family: var(--body-text-font-family);
@@ -316,7 +309,7 @@
   font-style: var(--body-text-font-style);
 }
 
-.frame .skill-wrapper {
+.element-portfolio .skill-wrapper {
   gap: 54px;
   transition: all 0.2s ease;
   display: inline-flex;
@@ -326,29 +319,37 @@
   flex: 0 0 auto;
 }
 
-.frame .skill-wrapper:hover {
+.element-portfolio .skill-wrapper:hover {
   transform: translate(0, -5px);
 }
 
-.frame .image-placeholder-2 {
-  background-image: url(https://c.animaapp.com/q7zuOXVj/img/image-placeholder-1@2x.png);
+.element-portfolio .image-placeholder-2 {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 0, 0, 0) 0%,
+      rgba(255, 0, 0, 0.2) 100%
+    ), url(https://c.animaapp.com/md2qngs8fkuHHI/img/image-placeholder-1.png)
+    50% 50% / cover;
   position: relative;
   width: 130px;
   height: 130px;
-  background-size: cover;
-  background-position: 50% 50%;
+  border-radius: 30px;
 }
 
-.frame .image-placeholder-3 {
-  background-image: url(https://c.animaapp.com/q7zuOXVj/img/image-placeholder-2@2x.png);
+.element-portfolio .image-placeholder-3 {
+  background: linear-gradient(
+      180deg,
+      rgba(42, 81, 254, 0) 0%,
+      rgba(42, 81, 254, 0.2) 100%
+    ), url(https://c.animaapp.com/md2qngs8fkuHHI/img/image-placeholder-2.png)
+    50% 50% / cover;
   position: relative;
   width: 130px;
   height: 130px;
-  background-size: cover;
-  background-position: 50% 50%;
+  border-radius: 30px;
 }
 
-.frame .latest-work-section {
+.element-portfolio .latest-work-section {
   display: flex;
   flex-direction: column;
   min-width: 1280px;
@@ -362,7 +363,7 @@
   background-color: #ffffff;
 }
 
-.frame .ellipse-4 {
+.element-portfolio .img {
   position: absolute;
   width: 1286px;
   height: 103px;
@@ -370,13 +371,13 @@
   left: -3px;
 }
 
-.frame .my-latest-work {
+.element-portfolio .my-latest-work {
   position: relative;
   width: fit-content;
   margin-top: -1.00px;
   font-family: "Epilogue", Helvetica;
   font-weight: 600;
-  color: #ff9500;
+  color: var(--colorsorange);
   font-size: 48px;
   text-align: center;
   letter-spacing: 0;
@@ -384,7 +385,7 @@
   white-space: nowrap;
 }
 
-.frame .work-cards-mobile {
+.element-portfolio .work-cards-mobile {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
@@ -395,7 +396,7 @@
   margin-right: -57.00px;
 }
 
-.frame .work-card {
+.element-portfolio .work-card {
   height: 8px;
   display: flex;
   flex-direction: column;
@@ -405,7 +406,7 @@
   position: relative;
 }
 
-.frame .work-card-2 {
+.element-portfolio .work-card-2 {
   display: flex;
   flex-direction: column;
   width: 1194px;
@@ -415,49 +416,53 @@
   flex: 0 0 auto;
 }
 
-.frame .frame-wrapper {
+.element-portfolio .frame-wrapper {
+  display: flex;
   align-items: flex-start;
   gap: 25px;
+  position: relative;
   align-self: stretch;
   width: 100%;
   flex: 0 0 auto;
-  display: flex;
-  position: relative;
 }
 
-.frame .div-3 {
+.element-portfolio .frame-3 {
+  display: flex;
   width: 1194px;
   align-items: center;
   justify-content: space-between;
-  display: flex;
   position: relative;
 }
 
-.frame .image-wrapper {
+.element-portfolio .image-wrapper {
   display: inline-flex;
   align-items: flex-start;
   gap: 25px;
   position: relative;
   flex: 0 0 auto;
+  border-radius: 30px;
+  overflow: hidden;
 }
 
-.frame .image-2 {
+.element-portfolio .image-2 {
   position: relative;
   width: 680px;
   height: 680px;
+  border-radius: 30px;
+  object-fit: cover;
 }
 
-.frame .div-4 {
+.element-portfolio .frame-4 {
+  display: flex;
   flex-direction: column;
   width: 489px;
   height: 680px;
   align-items: flex-start;
   justify-content: space-between;
-  display: flex;
   position: relative;
 }
 
-.frame .headline-subhead-4 {
+.element-portfolio .headline-subhead-4 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -468,7 +473,7 @@
   flex: 0 0 auto;
 }
 
-.frame .text-wrapper-3 {
+.element-portfolio .text-wrapper-3 {
   position: relative;
   width: 315px;
   margin-top: -1.00px;
@@ -481,7 +486,7 @@
   font-style: var(--subtitle-font-style);
 }
 
-.frame .text {
+.element-portfolio .text {
   position: relative;
   align-self: stretch;
   font-family: var(--body-text-font-family);
@@ -493,7 +498,7 @@
   font-style: var(--body-text-font-style);
 }
 
-.frame .headline-subhead-5 {
+.element-portfolio .headline-subhead-5 {
   display: flex;
   flex-direction: column;
   width: 408px;
@@ -503,7 +508,7 @@
   position: relative;
 }
 
-.frame .UI-art-drection {
+.element-portfolio .UI-art-drection {
   position: relative;
   width: 315px;
   margin-bottom: -6.00px;
@@ -516,14 +521,15 @@
   font-style: var(--body-text-font-style);
 }
 
-.frame .image-3 {
+.element-portfolio .image-3 {
   position: relative;
   width: 680px;
   height: 680px;
+  border-radius: 30px;
   object-fit: cover;
 }
 
-.frame .work-card-3 {
+.element-portfolio .work-card-3 {
   height: 1px;
   display: flex;
   flex-direction: column;
@@ -533,7 +539,7 @@
   position: relative;
 }
 
-.frame .footer {
+.element-portfolio .footer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -546,7 +552,7 @@
   background-color: #ffffff;
 }
 
-.frame .footer-info {
+.element-portfolio .footer-info {
   align-items: center;
   gap: 70px;
   padding: 70px 0px 0px;
@@ -559,7 +565,7 @@
   flex: 0 0 auto;
 }
 
-.frame .footer-info-2 {
+.element-portfolio .footer-info-2 {
   display: inline-flex;
   align-items: flex-start;
   gap: 190px;
@@ -567,7 +573,7 @@
   flex: 0 0 auto;
 }
 
-.frame .contact-info {
+.element-portfolio .contact-info {
   display: inline-flex;
   flex-direction: column;
   height: 466px;
@@ -577,7 +583,7 @@
   flex: 0 0 auto;
 }
 
-.frame .div-5 {
+.element-portfolio .div-2 {
   align-items: flex-start;
   gap: 40px;
   display: inline-flex;
@@ -586,20 +592,20 @@
   flex: 0 0 auto;
 }
 
-.frame .let-s-work-together {
+.element-portfolio .let-s-work-together {
   position: relative;
   width: 360px;
   height: 201px;
   margin-top: -1.00px;
   font-family: "Epilogue", Helvetica;
   font-weight: 800;
-  color: #ff9500;
+  color: var(--colorsorange);
   font-size: 64px;
   letter-spacing: 0;
   line-height: 62px;
 }
 
-.frame .whether-you-re {
+.element-portfolio .whether-you-re {
   position: relative;
   width: 360px;
   font-family: var(--body-text-font-family);
@@ -611,7 +617,7 @@
   font-style: var(--body-text-font-style);
 }
 
-.frame .span {
+.element-portfolio .span {
   color: #2d2d2d;
   font-family: var(--body-text-font-family);
   font-style: var(--body-text-font-style);
@@ -621,7 +627,7 @@
   font-size: var(--body-text-font-size);
 }
 
-.frame .text-wrapper-4 {
+.element-portfolio .text-wrapper-4 {
   color: #c57804;
   font-family: var(--body-text-font-family);
   font-style: var(--body-text-font-style);
@@ -631,94 +637,14 @@
   font-size: var(--body-text-font-size);
 }
 
-.frame .social-icons {
+.element-portfolio .social-icons {
   position: relative;
   width: 232px;
   height: 36px;
   margin-bottom: -60.00px;
 }
 
-.frame .nstagram {
-  position: absolute;
-  width: 36px;
-  height: 36px;
-  top: 0;
-  left: 147px;
-}
-
-.frame .vector {
-  position: absolute;
-  width: 27px;
-  height: 27px;
-  top: 5px;
-  left: 5px;
-}
-
-.frame .behance {
-  position: absolute;
-  width: 36px;
-  height: 36px;
-  top: 0;
-  left: 196px;
-}
-
-.frame .vector-2 {
-  position: absolute;
-  width: 30px;
-  height: 19px;
-  top: 9px;
-  left: 3px;
-}
-
-.frame .dribbble {
-  position: absolute;
-  width: 36px;
-  height: 36px;
-  top: 0;
-  left: 98px;
-}
-
-.frame .vector-3 {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  top: 3px;
-  left: 3px;
-}
-
-.frame .facebook {
-  position: absolute;
-  width: 36px;
-  height: 36px;
-  top: 0;
-  left: 49px;
-}
-
-.frame .vector-4 {
-  position: absolute;
-  width: 27px;
-  height: 27px;
-  top: 4px;
-  left: 4px;
-}
-
-.frame .discord {
-  position: absolute;
-  width: 36px;
-  height: 36px;
-  top: 0;
-  left: 0;
-}
-
-.frame .vector-5 {
-  position: absolute;
-  width: 25px;
-  height: 28px;
-  top: 4px;
-  left: 4px;
-}
-
-.frame .text-fields {
+.element-portfolio .text-fields {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
@@ -727,7 +653,7 @@
   flex: 0 0 auto;
 }
 
-.frame .text-input-desktop {
+.element-portfolio .text-input-desktop {
   width: 530px;
   padding: 21px 30px;
   position: relative;
@@ -746,7 +672,7 @@
   font-style: var(--body-text-font-style);
 }
 
-.frame .write-something-wrapper {
+.element-portfolio .write-something-wrapper {
   display: flex;
   width: 530px;
   align-items: flex-start;
@@ -757,7 +683,7 @@
   background-color: #f3f3f3;
 }
 
-.frame .write-something {
+.element-portfolio .write-something {
   position: relative;
   flex: 1;
   flex-grow: 1;
@@ -775,11 +701,11 @@
   font-style: var(--body-text-font-style);
 }
 
-.frame .write-something::placeholder {
+.element-portfolio .write-something::placeholder {
   color: #2d2d2d99;
 }
 
-.frame .button {
+.element-portfolio .button {
   all: unset;
   box-sizing: border-box;
   display: inline-flex;
@@ -788,16 +714,16 @@
   padding: 25px 82px;
   position: relative;
   flex: 0 0 auto;
-  background-color: #ff9500;
+  background-color: var(--colorsorange);
 }
 
-.frame .text-wrapper-5 {
+.element-portfolio .text-wrapper-5 {
   position: relative;
   width: fit-content;
   margin-top: -1.00px;
   font-family: "Epilogue", Helvetica;
   font-weight: 600;
-  color: #000000;
+  color: var(--labelsprimary);
   font-size: 20px;
   text-align: center;
   letter-spacing: 0;
