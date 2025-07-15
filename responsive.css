@@ -16,24 +16,28 @@
   .frame .headline-subhead,
   .frame .and-i-made-it-myself {
     width: 50%;
+    gap: 22px;
   }
 
   /* Decrease image sizing slightly */
   .frame .image {
     width: 50%; /* reduced from 100% */
     left: 0;
+    gap: 22px;
     position: relative;
     margin: 0 auto;
   }
 
   .frame .text-input-desktop,
   .frame .write-something-wrapper {
+    gap: 22px;
     width: 100%;
   }
 
   /* Work card font size increase (desktop & tablet) */
   .frame .work-card .project-title,
   .frame .work-card .text-wrapper-4 {
+    gap: 22px;
     font-size: 20px; /* Increase for better visibility */
     text-align: center; /* Center text */
   }
