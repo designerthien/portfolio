@@ -38,54 +38,65 @@
   }
 }
 
-/* ===== Tablet standard (481px to 1024px) ===== */
-@media screen and (min-width: 481px) and (max-width: 1024px) {
-  /* Skills horizontally aligned with wrapping */
+
+
+/* ===============================
+   Tablet Styles (481px to 768px)
+   Adjust fonts, images, layout for tablets
+=============================== */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+  /* Skills Section: Horizontal, wrapping allowed */
   .frame .skills {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-wrap: wrap; /* wrap for smaller tablets */
+    gap: 18px;
     justify-content: center;
     align-items: center;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
   }
 
+  /* Individual Skill Items: Medium font, padding and border */
   .frame .skills .text-wrapper {
-    font-size: 18px;
-    padding: 10px 14px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background: #f9f9f9;
+    font-size: 15px;
+    padding: 8px 14px;
+    border: 1.5px solid #bbb;
+    border-radius: 5px;
+    background-color: #fafafa;
+    white-space: nowrap; /* prevent wrapping inside skill */
   }
 
-  /* Font adjustments for tablet */
-  .frame .text-wrapper-2 {
-    font-size: 56px;
-  }
-
-  .frame .i-am-robert-s-le {
-    font-size: 28px;
-    line-height: 40px;
-  }
-
+  /* Headings and Text: Centered and sized for tablet */
   .frame .text-wrapper-3 {
-    font-size: 36px;
+    font-size: 36px !important;
+    line-height: 44px !important;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
   }
 
-  /* Resize images for tablet */
+  .frame .text-wrapper-2,
+  .frame .i-am-robert-s-le {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Image Resizing for Tablets */
   .frame .image,
   .frame .img,
   .frame .image-2,
   .frame .image-wrapper {
-    max-width: 480px;
-    width: 100%;
-    height: auto;
+    max-width: 420px !important;
+    width: 100% !important;
+    height: auto !important;
     margin-left: auto;
     margin-right: auto;
     display: block;
   }
 
-  /* Vertically center latest work section */
+  /* Latest Work Section: Vertically centered */
   .frame .latest-work-section {
     display: flex;
     flex-direction: column;
@@ -93,107 +104,120 @@
     align-items: center;
     min-height: 320px;
     padding: 40px 20px;
+    box-sizing: border-box;
   }
 
-  /* Move 'Let's work together' section to bottom visually */
-  /* Assuming '.footer' is that section */
+  /* Footer adjustments */
   .frame .footer {
-    order: 9999; /* push to end if flex parent */
+    order: 9999; /* visually place footer last */
     margin-top: 60px;
     width: 100%;
   }
+
+  /* Consistent padding for main sections */
+  .frame .skills-section,
+  .frame .logos-section,
+  .frame .latest-work-section,
+  .frame .footer {
+    padding: 30px 20px !important;
+  }
 }
 
-/* ===== Phone standard (max-width: 480px) ===== */
+/* ===============================
+   Phone Styles (≤480px)
+   Adjust fonts, images, layout for phones
+=============================== */
 @media screen and (max-width: 480px) {
-  /* Skills: horizontal scroll, no wrap */
+
+  /* Skills Section: Horizontal with wrapping and centered */
   .frame .skills {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 12px;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: center;
     align-items: center;
-    overflow-x: auto;
     padding-bottom: 10px;
+    margin-bottom: 20px;
   }
 
+  /* Individual Skill Items: Smaller font and padding */
   .frame .skills .text-wrapper {
-    font-size: 14px;
+    font-size: 13px;
     padding: 6px 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    background: #f9f9f9;
     white-space: nowrap;
   }
 
-  /* Font sizes for phone */
+  /* Headings and Text: Smaller font sizes, centered */
   .frame .text-wrapper-2 {
-    font-size: 42px;
+    font-size: 48px;
   }
 
   .frame .i-am-robert-s-le {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .frame .text-wrapper-3 {
-    font-size: 28px;
-  }
-
-  /* Resize images for phone */
-  .frame .image,
-  .frame .img,
-  .frame .image-2,
-  .frame .image-wrapper {
-    max-width: 320px;
+    font-size: 32px;
+    line-height: 44px;
+    margin-bottom: 15px;
+    text-align: center;
     width: 100%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
   }
 
-  /* Vertically center latest work section */
+  /* Latest Work Section: vertically centered with padding */
   .frame .latest-work-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 280px;
-    padding: 30px 10px;
+    padding: 30px 15px;
+    box-sizing: border-box;
   }
 
-  /* Move 'Let's work together' section to bottom */
-  .frame .footer {
-    order: 9999; /* ensure footer is last */
-    margin-top: 50px;
-    width: 100%;
+  /* Images resized smaller for phones */
+  .frame .image,
+  .frame .img,
+  .frame .image-2,
+  .frame .image-wrapper {
+    max-width: 320px !important;
+    width: 100% !important;
+    height: auto !important;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
 
-  /* Padding adjustments */
+  /* Footer padding */
   .frame .skills-section,
   .frame .logos-section,
   .frame .latest-work-section,
   .frame .footer {
-    padding: 30px 10px;
+    padding: 25px 15px !important;
   }
 
-  .frame .text-input-desktop,
-  .frame .write-something-wrapper {
-    width: 100%;
-  }
-
+  /* Button full width and centered */
   .frame .button {
     width: 100%;
     justify-content: center;
   }
 }
 
-/* ===== Very small phones (up to 360px) ===== */
+/* ===============================
+   Mobile image stacking and typography simplification (≤360px)
+=============================== */
 @media screen and (max-width: 360px) {
   .frame .headline-subhead-3,
   .frame .headline-subhead-4 {
     width: 100%;
+    text-align: center;
+  }
+
+  .frame .overlap {
+    left: 0 !important;
   }
 
   .frame .text,
