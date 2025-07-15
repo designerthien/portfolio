@@ -64,12 +64,12 @@
 
   .frame .headline-subhead,
   .frame .and-i-made-it-myself {
-    width: 100%;
+    width: 80%;
   }
 
   /* Centered and resized image */
   .frame .image {
-    width: 88%;
+    width: 70%;
     left: 0;
     position: relative;
     margin: 0 auto;
