@@ -69,15 +69,22 @@
 
   /* Portfolio heading spacing and font size */
   .frame .text-wrapper-3 {
-    font-size: 36px !important;
-    line-height: 44px !important;
-    margin-bottom: 20px; /* Space below heading to separate from skills */
+    font-size: 38px !important;
+    line-height: 48px !important;
+    margin-bottom: 40px; /* Space below heading to separate from skills */
     text-align: center;
     width: 100%;
   }
 
+  .frame .text-wrapper-2 {
+  font-size: 70px; /* Increased font size for 'Hello I am Robert Le' */
+  line-height: 82px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+
   /* 'Hello I am Robert Le' text style */
-  .frame .text-wrapper-2,
   .frame .i-am-robert-s-le {
     width: 100%;
     text-align: center;
@@ -107,13 +114,6 @@
     box-sizing: border-box;
   }
 
-  /* Footer adjustments */
-  .frame .footer {
-    order: 9999; /* visually place footer last */
-    margin-top: 60px;
-    width: 100%;
-  }
-
   /* Consistent padding for main sections */
   .frame .skills-section,
   .frame .logos-section,
@@ -136,6 +136,14 @@
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 10px;
+  }
+
+  
+  /* Footer adjustments */
+  .frame .footer {
+    order: 9999; /* visually place footer last */
+    margin-top: 60px;
+    width: 100%;
   }
 
   /* Footer spacing */
@@ -225,13 +233,6 @@
   .frame .footer {
     padding: 25px 15px !important;
   }
-
-  /* Button full width and centered */
-  .frame .button {
-    width: 100%;
-    justify-content: center;
-  }
-
   /* Increase font size in work cards for readability on phone */
   .frame .work-card,
   .frame .work-card-2 {
@@ -246,6 +247,29 @@
     font-size: 20px;
     margin-bottom: 8px;
   }
+}
+
+
+
+  /* Button full width and centered */
+  .frame .button {
+    width: 100%;
+    justify-content: center;
+  }
+
+/* Ensure footer is the last element in body */
+/* Add margin-top to footer to separate it from previous content */
+.frame .footer {
+  margin-top: 80px; /* Adds breathing room above footer */
+  padding: 40px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fafafa;
+  /* Optional: min-height to keep footer consistent */
+  min-height: 120px;
+  text-align: center;
+  font-size: 16px;
+  color: rgba(45, 45, 45, 0.8);
 }
 
 
