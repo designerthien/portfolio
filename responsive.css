@@ -10,6 +10,13 @@
     padding: 40px 20px;
     text-align: center;
   }
+
+   /* Header video: keep width around 50%, center horizontally */
+  .frame .image {
+    position: relative;
+    margin: 0 auto; /* add bottom margin for breathing */
+  }
+
  
   /* Keep headline-subhead block about 40-45% width on desktop/tablet */
   .frame .headline-subhead,
