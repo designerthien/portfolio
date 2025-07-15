@@ -43,129 +43,102 @@
   }
 }
 
-/* ===== Styles for screens up to 768px wide (tablets and small desktops) ===== */
 @media screen and (max-width: 768px) {
-  /* --- SKILLS SECTION: display skills horizontally with wrapping and spacing --- */
   .frame .skills {
-    display: flex;               /* horizontal flexbox layout */
-    flex-direction: row;         /* row direction */
-    flex-wrap: wrap;             /* wrap to next line if needed */
-    gap: 20px;                  /* space between skill items */
-    justify-content: center;    /* center skills horizontally */
-    align-items: center;        /* vertically align skill items */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
   }
 
-
-
-  /* Style each skill item */
   .frame .skills .text-wrapper {
     font-size: 16px;
     padding: 8px 12px;
-    border: 1px solid #ccc;     /* subtle border around each skill */
-    border-radius: 4px;         /* rounded corners */
-    background: #f9f9f9;        /* light background for contrast */
+    border: 1px solid #ccc;
+    border-radius: 4px;
   }
 
-  /* Large heading font size */
   .frame .text-wrapper-2 {
     font-size: 64px;
   }
 
-  /* Name subtitle font size and line height */
   .frame .i-am-robert-s-le {
     font-size: 32px;
     line-height: 42px;
   }
 
-  /* Medium heading font size */
   .frame .text-wrapper-3 {
     font-size: 40px;
   }
 
-  /* Full width text blocks */
   .frame .headline-subhead,
   .frame .and-i-made-it-myself {
     width: 100%;
   }
 
-  /* Header adjustments */
   .frame .header {
     height: auto;
     padding: 30px 20px;
   }
 
-  /* Footer messages full width */
   .frame .footer-message,
   .frame .contact-message,
   .frame .i-built-this-website {
     width: 100%;
   }
 
-  /* Work cards and frame wrapper full width with horizontal padding */
   .frame .frame-wrapper,
   .frame .work-card,
-  .frame .work-card-2 {
-    width: 100% !important;
-    padding: 0 16px;
-    box-sizing: border-box;
+  .frame .work-card-2,
   .frame .work-cards-mobile {
     width: 100%;
     left: 0;
     padding: 0 10px;
   }
 
-
-  /* Div container stacks vertically with gap */
   .frame .div-2 {
     flex-direction: column;
     gap: 20px;
   }
 
-  /* Images and image wrappers responsive */
   .frame .img,
   .frame .image-2 {
     width: 100%;
     height: auto;
   }
 
-  /* Content container margin and sizing */
   .frame .div-3 {
     width: 100%;
     height: auto;
     margin-top: 20px;
   }
 
-  /* Logos section spacing increased on tablets */
   .frame .logos-section {
     margin-top: 100px;
   }
 }
 
-/* ===== Styles for screens up to 480px wide (phones and small mobiles) ===== */
 @media screen and (max-width: 480px) {
-  /* Large text wrapper smaller font */
   .frame .text-wrapper-2 {
     font-size: 48px;
   }
 
-  /* Subtitle font smaller */
   .frame .i-am-robert-s-le {
     font-size: 24px;
   }
 
-  /* Medium text wrapper font size */
   .frame .text-wrapper-3 {
     font-size: 32px;
   }
 
-  /* Latest work section heading font size and centering */
   .frame .my-latest-work {
     font-size: 32px;
     left: 50%;
     transform: translateX(-50%);
   }
 
-  /* Padding adjustments on sections for narrow screens */
   .frame .skills-section,
   .frame .logos-section,
   .frame .latest-work-section,
@@ -173,31 +146,28 @@
     padding: 30px 10px;
   }
 
-  /* Inputs full width */
   .frame .text-input-desktop,
   .frame .write-something-wrapper {
     width: 100%;
   }
 
-  /* Buttons full width and centered content */
   .frame .button {
     width: 100%;
     justify-content: center;
   }
 }
 
-/* ===== Styles for very small screens (up to 360px) ===== */
+/* Mobile image stacking and typography simplification */
 @media screen and (max-width: 360px) {
-  /* Headline subheads full width */
   .frame .headline-subhead-3,
   .frame .headline-subhead-4 {
     width: 100%;
   }
 
-  /* Smaller font size for text blocks */
   .frame .text,
   .frame .UI-art-drection {
     font-size: 15px;
     line-height: 24px;
   }
 }
+
