@@ -15,7 +15,7 @@
 
   .frame .headline-subhead,
   .frame .and-i-made-it-myself {
-    width: 100%;
+    width: 50%;
   }
 
   /* Decrease image sizing slightly */
@@ -64,12 +64,12 @@
 
   .frame .headline-subhead,
   .frame .and-i-made-it-myself {
-    width: 80%;
+    width: 60%;
   }
 
   /* Centered and resized image */
   .frame .image {
-    width: 70%;
+    width: 50%;
     left: 0;
     position: relative;
     margin: 0 auto;
@@ -133,13 +133,7 @@
   .frame .frame-wrapper,
   .frame .work-card,
   .frame .work-card-2,
-  .frame .work-cards-mobile {
-    width: 100%;
-    left: 0;
-    padding: 0 12px;
-    text-align: center;
-  }
-
+  .frame .work-cards-mobile,
   .frame .work-card .project-title,
   .frame .work-card .text-wrapper-4 {
     font-size: 20px;
@@ -154,13 +148,13 @@
 
   .frame .img,
   .frame .image-2 {
-    width: 88%;
+    width: 60%;
     height: auto;
     margin: 0 auto;
   }
 
   .frame .div-3 {
-    width: 100%;
+    width: 60%;
     height: auto;
     margin-top: 22px;
     text-align: center;
