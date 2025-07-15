@@ -19,272 +19,190 @@
     width: 100%;
   }
 
-  /* Responsive images for larger tablets and desktops */
-  .frame .image,
-  .frame .img,
-  .frame .image-2,
-  .frame .image-wrapper {
-    max-width: 600px;
+  .frame .image {
     width: 100%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    left: 0;
+    position: relative;
   }
 
-  /* Footer placed at bottom naturally in layout */
-  .frame .footer {
-    margin-top: 60px;
+  .frame .footer-info-2 {
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  .frame .text-input-desktop,
+  .frame .write-something-wrapper {
+    width: 100%;
+  }
+
+  /* Work card font size increase (desktop & tablet) */
+  .frame .work-card .project-title,
+  .frame .work-card .text-wrapper-4 {
+    font-size: 20px; /* Increase for better visibility */
   }
 }
 
-
-/* ===============================
-   Tablet Styles (481px to 768px)
-   Adjust fonts, images, layout for tablets
-=============================== */
-@media screen and (min-width: 481px) and (max-width: 768px) {
-
-  /* Skills Section: Horizontal with wrapping */
+@media screen and (max-width: 768px) {
   .frame .skills {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; /* wrap for smaller tablets */
-    gap: 18px;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: center;
     align-items: center;
-    padding-bottom: 15px;
-    margin-bottom: 25px; /* Added space below skills */
   }
 
-  /* Individual Skill Items: Medium font, padding and border */
   .frame .skills .text-wrapper {
-    font-size: 15px;
-    padding: 8px 14px;
-    border: 1.5px solid #bbb;
-    border-radius: 5px;
-    background-color: #fafafa;
-    white-space: nowrap; /* prevent wrapping inside skill */
+    font-size: 16px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  /* “Hello” text and intro */
+  .frame .text-wrapper-2 {
+    font-size: 64px;
+  }
+
+  .frame .i-am-robert-s-le {
+    font-size: 32px;
+    line-height: 42px;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  /* "Graphic designer" appears on new line */
+  .frame .i-am-robert-s-le::after {
+    content: "\A Graphic designer";
+    white-space: pre;
   }
 
   /* Portfolio heading spacing and font size */
   .frame .text-wrapper-3 {
     font-size: 38px !important;
     line-height: 48px !important;
-    margin-bottom: 40px; /* Space below heading to separate from skills */
+    margin-top: 40px;   /* Separation from skills */
+    margin-bottom: 40px;
     text-align: center;
     width: 100%;
   }
 
-  .frame .text-wrapper-2 {
-  font-size: 70px; /* Increased font size for 'Hello I am Robert Le' */
-  line-height: 82px;
-  text-align: center;
-  margin-bottom: 12px;
-}
+  .frame .header {
+    height: auto;
+    padding: 30px 20px;
+  }
 
-
-  /* 'Hello I am Robert Le' text style */
-  .frame .i-am-robert-s-le {
+  .frame .footer-message,
+  .frame .contact-message,
+  .frame .i-built-this-website {
     width: 100%;
-    text-align: center;
   }
 
-  /* Image Resizing for Tablets */
-  .frame .image,
-  .frame .img,
-  .frame .image-2,
-  .frame .image-wrapper {
-    max-width: 420px !important;
-    width: 100% !important;
-    height: auto !important;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
-
-  /* Latest Work Section: Vertically centered */
-  .frame .latest-work-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 320px;
-    padding: 40px 20px;
-    box-sizing: border-box;
-  }
-
-  /* Consistent padding for main sections */
-  .frame .skills-section,
-  .frame .logos-section,
-  .frame .latest-work-section,
-  .frame .footer {
-    padding: 30px 20px !important;
-  }
-
-  /* Increase font size in work cards */
+  .frame .frame-wrapper,
   .frame .work-card,
-  .frame .work-card-2 {
-    font-size: 18px;
-    line-height: 28px;
-    padding: 20px 15px;
-    box-sizing: border-box;
+  .frame .work-card-2,
+  .frame .work-cards-mobile {
+    width: 100%;
+    left: 0;
+    padding: 0 10px;
   }
 
   .frame .work-card .project-title,
-  .frame .work-card-2 .project-title {
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 10px;
+  .frame .work-card .text-wrapper-4 {
+    font-size: 18px; /* Increased for tablet */
   }
 
-  
-  /* Footer adjustments */
-  .frame .footer {
-    order: 9999; /* visually place footer last */
-    margin-top: 60px;
+  .frame .div-2 {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .frame .img,
+  .frame .image-2 {
     width: 100%;
+    height: auto;
   }
 
-  /* Footer spacing */
+  .frame .div-3 {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .frame .logos-section {
+    margin-top: 100px;
+  }
+
   .frame .footer {
-    padding: 40px 20px;
-    background-color: #fafafa;
-    text-align: center;
-    font-size: 16px;
-    color: rgba(45, 45, 45, 0.8);
+    margin-top: 60px;
   }
 }
 
-
-/* ===============================
-   Phone Styles (≤480px)
-   Adjust fonts, images, layout for phones
-=============================== */
 @media screen and (max-width: 480px) {
-
-  /* Skills Section: Horizontal with wrapping and centered */
-  .frame .skills {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 14px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 10px;
-    margin-bottom: 20px; /* Space below skills */
-  }
-
-  /* Individual Skill Items: Smaller font and padding */
-  .frame .skills .text-wrapper {
-    font-size: 13px;
-    padding: 6px 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    white-space: nowrap;
-  }
-
-  /* 'Hello I am Robert Le' text size */
   .frame .text-wrapper-2 {
     font-size: 48px;
   }
 
   .frame .i-am-robert-s-le {
     font-size: 24px;
+    display: block;
+    margin-bottom: 6px;
   }
 
-  /* Portfolio heading spacing and font size */
+  /* “Graphic designer” goes to next line */
+  .frame .i-am-robert-s-le::after {
+    content: "\A Graphic designer";
+    white-space: pre;
+  }
+
   .frame .text-wrapper-3 {
     font-size: 32px;
     line-height: 44px;
-    margin-bottom: 15px; /* Space below portfolio heading */
+    margin-top: 40px;
+    margin-bottom: 40px; /* space from skills section */
     text-align: center;
     width: 100%;
   }
 
-  /* Latest Work Section: vertically centered with padding */
-  .frame .latest-work-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 280px;
-    padding: 30px 15px;
-    box-sizing: border-box;
+  .frame .my-latest-work {
+    font-size: 32px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
-  /* Images resized smaller for phones */
-  .frame .image,
-  .frame .img,
-  .frame .image-2,
-  .frame .image-wrapper {
-    max-width: 320px !important;
-    width: 100% !important;
-    height: auto !important;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
-
-  /* Footer padding and layout */
   .frame .skills-section,
   .frame .logos-section,
   .frame .latest-work-section,
   .frame .footer {
-    padding: 25px 15px !important;
-  }
-  /* Increase font size in work cards for readability on phone */
-  .frame .work-card,
-  .frame .work-card-2 {
-    font-size: 16px;
-    line-height: 26px;
-    padding: 15px 10px;
-    box-sizing: border-box;
+    padding: 30px 10px;
   }
 
-  .frame .work-card .project-title,
-  .frame .work-card-2 .project-title {
-    font-size: 20px;
-    margin-bottom: 8px;
+  .frame .text-input-desktop,
+  .frame .write-something-wrapper {
+    width: 100%;
   }
-}
 
-
-
-  /* Button full width and centered */
   .frame .button {
     width: 100%;
     justify-content: center;
   }
 
-/* Ensure footer is the last element in body */
-/* Add margin-top to footer to separate it from previous content */
-.frame .footer {
-  margin-top: 80px; /* Adds breathing room above footer */
-  padding: 40px 20px;
-  width: 100%;
-  box-sizing: border-box;
-  background-color: #fafafa;
-  /* Optional: min-height to keep footer consistent */
-  min-height: 120px;
-  text-align: center;
-  font-size: 16px;
-  color: rgba(45, 45, 45, 0.8);
+  .frame .work-card .project-title,
+  .frame .work-card .text-wrapper-4 {
+    font-size: 17px; /* Slightly larger on phones */
+  }
+
+  .frame .footer {
+    margin-top: 50px;
+  }
 }
 
-
-/* ===============================
-   Mobile image stacking and typography simplification (≤360px)
-=============================== */
+/* Mobile image stacking and typography simplification */
 @media screen and (max-width: 360px) {
   .frame .headline-subhead-3,
   .frame .headline-subhead-4 {
     width: 100%;
-    text-align: center;
-  }
-
-  .frame .overlap {
-    left: 0 !important;
   }
 
   .frame .text,
@@ -292,20 +210,9 @@
     font-size: 15px;
     line-height: 24px;
   }
-}
 
-
-/* ===============================
-   Additional: Force "Graphic Designer" on next line under 'Hello I am Robert Le'
-   Add this class to your HTML span wrapping "Graphic Designer":
-   <span class="graphic-designer-line-break">Graphic Designer</span>
-=============================== */
-.frame .graphic-designer-line-break {
-  display: block; /* forces line break */
-  font-size: 40px; /* subtitle font size */
-  font-weight: 600;
-  margin-top: 6px;
-  color: var(--black);
-  font-family: var(--body-text-font-family);
-  text-align: center;
+  /* Footer spacing */
+  .frame .footer {
+    margin-top: 40px;
+  }
 }
