@@ -19,12 +19,18 @@
 
  
   /* Keep headline-subhead block about 40-45% width on desktop/tablet */
-  .frame .headline-subhead,
+  .frame .headline-subhead{
+    width: 45%;
+    gap: 22px;
+    text-align: center;
+  }
+
+  
   .frame .and-i-made-it-myself {
     width: 45%;
     gap: 22px;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
   }
 
    
