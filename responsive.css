@@ -1,100 +1,167 @@
 /* responsive.css */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1280px) {
   .frame {
+    width: 100%;
     padding: 0 20px;
   }
 
   .frame .header,
   .frame .skills-section,
+  .frame .latest-work-section,
   .frame .footer {
-    padding: 60px 20px;
+    padding: 40px 20px;
   }
 
   .frame .headline-subhead,
-  .frame .headline-subhead-2,
-  .frame .div-3 {
+  .frame .and-i-made-it-myself {
     width: 100%;
   }
 
   .frame .image {
-    position: relative;
     width: 100%;
-    height: auto;
     left: 0;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .frame .skills {
-    flex-direction: column;
-    gap: 40px;
+    position: relative;
   }
 
   .frame .footer-info-2 {
     flex-direction: column;
     gap: 40px;
+    align-items: flex-start;
+  }
+
+  .frame .text-input-desktop,
+  .frame .write-something-wrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .frame .skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Added skill item styling for better horizontal layout */
+  .frame .skills .text-wrapper {
+    font-size: 16px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #f9f9f9;
   }
 
   .frame .text-wrapper-2 {
     font-size: 64px;
-    line-height: 80px;
   }
 
   .frame .i-am-robert-s-le {
-    font-size: 36px;
-    line-height: 50px;
+    font-size: 32px;
+    line-height: 42px;
   }
 
   .frame .text-wrapper-3 {
-    font-size: 48px;
+    font-size: 40px;
   }
 
-  .frame .image-wrapper,
+  .frame .headline-subhead,
+  .frame .and-i-made-it-myself {
+    width: 100%;
+  }
+
+  .frame .header {
+    height: auto;
+    padding: 30px 20px;
+  }
+
+  .frame .footer-message,
+  .frame .contact-message,
+  .frame .i-built-this-website {
+    width: 100%;
+  }
+
+  .frame .frame-wrapper,
+  .frame .work-card,
+  .frame .work-card-2,
+  .frame .work-cards-mobile {
+    width: 100%;
+    left: 0;
+    padding: 0 10px;
+  }
+
+  .frame .div-2 {
+    flex-direction: column;
+    gap: 20px;
+  }
+
   .frame .img,
   .frame .image-2 {
     width: 100%;
     height: auto;
   }
 
-  .frame .frame-wrapper,
-  .frame .div-wrapper,
-  .frame .div-2,
   .frame .div-3 {
-    flex-direction: column;
     width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .frame .logos-section {
+    margin-top: 100px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .frame .text-input-desktop,
-  .frame .write-something-wrapper,
-  .frame .headline-subhead,
-  .frame .and-i-made-it-myself,
-  .frame .i-built-this-website,
-  .frame .contact-message {
-    width: 100%;
-  }
-
   .frame .text-wrapper-2 {
     font-size: 48px;
   }
 
   .frame .i-am-robert-s-le {
-    font-size: 28px;
-    line-height: 40px;
+    font-size: 24px;
   }
 
-  .frame .let-s-work-together {
-    font-size: 42px;
-    line-height: 48px;
+  .frame .text-wrapper-3 {
+    font-size: 32px;
   }
 
+  .frame .my-latest-work {
+    font-size: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .frame .skills-section,
+  .frame .logos-section,
+  .frame .latest-work-section,
   .frame .footer {
-    padding: 40px 20px;
+    padding: 30px 10px;
+  }
+
+  .frame .text-input-desktop,
+  .frame .write-something-wrapper {
+    width: 100%;
   }
 
   .frame .button {
-    padding: 20px 60px;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Mobile image stacking and typography simplification */
+@media screen and (max-width: 360px) {
+  .frame .headline-subhead-3,
+  .frame .headline-subhead-4 {
+    width: 100%;
+  }
+
+  .frame .text,
+  .frame .UI-art-drection {
+    font-size: 15px;
+    line-height: 24px;
   }
 }
