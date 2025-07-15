@@ -26,13 +26,6 @@
     text-align: center;
   }
 
-  /* Header video: keep width around 50%, center horizontally */
-  .frame .image {
-    width: 50%;
-    position: relative;
-    margin: 0 auto 32px; /* add bottom margin for breathing */
-  }
-
   .frame .text-input-desktop,
   .frame .write-something-wrapper {
     width: 100%;
