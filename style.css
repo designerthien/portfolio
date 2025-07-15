@@ -1,146 +1,217 @@
-.element-portfolio {
-  display: inline-flex;
+.frame {
+  display: flex;
   flex-direction: column;
+  height: 6688px;
+  width: 1280px;
   align-items: flex-start;
   position: relative;
+  margin: 0 auto;
 }
 
-.element-portfolio .frame {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  position: relative;
-  flex: 0 0 auto;
+@media screen and (max-width: 1280px) {
+  .frame {
+    width: 100%;
+  }
+  
+  .frame .navigation,
+  .frame .header,
+  .frame .logos-section,
+  .frame .skills-section,
+  .frame .latest-work-section,
+  .frame .footer {
+    width: 100%;
+  }
+  
+  .frame .logos {
+    width: 100%;
+  }
+  
+  .frame .work-cards-mobile {
+    width: 90%;
+    left: 5%;
+  }
+  
+  .frame .frame-wrapper,
+  .frame .work-card,
+  .frame .work-card-2 {
+    width: 100%;
+  }
+  
+  .frame .div-2 {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .frame .image-wrapper,
+  .frame .img,
+  .frame .image-2 {
+    width: 100%;
+    height: auto;
+  }
+  
+  .frame .div-3 {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+  }
+  
+  .frame .footer-info-2 {
+    flex-direction: column;
+    gap: 60px;
+  }
+  
+  .frame .text-input-desktop,
+  .frame .write-something-wrapper {
+    width: 100%;
+  }
 }
 
-.element-portfolio .navigation {
+@media screen and (max-width: 768px) {
+  .frame .skills {
+    flex-direction: column;
+    gap: 60px;
+  }
+  
+  .frame .text-wrapper-2 {
+    font-size: 80px;
+  }
+  
+  .frame .i-am-robert-s-le {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  
+  .frame .text-wrapper-3 {
+    font-size: 60px;
+  }
+  
+  .frame .headline-subhead,
+  .frame .and-i-made-it-myself {
+    width: 100%;
+  }
+  
+  .frame .image {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 30px auto;
+  }
+  
+  .frame .header {
+    height: auto;
+    padding: 50px 20px;
+  }
+  
+  .frame .i-built-this-website,
+  .frame .contact-message {
+    width: 100%;
+  }
+}
+
+.frame .navigation {
   position: relative;
   width: 1280px;
   height: 80px;
   background-color: #ffffff;
 }
 
-.element-portfolio .asset {
+.frame .overlap-group {
   position: absolute;
-  width: 91px;
-  height: 80px;
+  width: 172px;
+  height: 44px;
+  top: 19px;
+  left: 1071px;
+}
+
+.frame .rectangle {
+  position: absolute;
+  width: 139px;
+  height: 43px;
   top: 0;
-  left: 15px;
+  left: 17px;
+}
+
+.frame .about-me-link {
+  position: absolute;
+  width: 139px;
+  height: 44px;
+  top: 0;
+  left: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frame .about-me-link::after {
+  content: "ABOUT ME";
+  font-family: "Epilogue", Helvetica;
+  font-weight: 600;
+  color: var(--color-text-neutral-on-neutral);
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 44px;
+  white-space: nowrap;
+}
+
+.frame .asset {
+  position: absolute;
+  width: 76px;
+  height: 77px;
+  top: 2px;
+  left: 19px;
   object-fit: cover;
 }
 
-.element-portfolio .menu {
-  position: absolute;
-  width: 25px;
-  height: 23px;
-  top: 29px;
-  left: 1207px;
-}
-
-.element-portfolio .ellipse {
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  top: 0;
-  left: 17px;
-  background-color: #2d2d2d;
-  border-radius: 4px;
-}
-
-.element-portfolio .div {
-  top: 15px;
-  left: 17px;
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  background-color: #2d2d2d;
-  border-radius: 4px;
-}
-
-.element-portfolio .ellipse-2 {
-  top: 0;
-  left: 0;
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  background-color: #2d2d2d;
-  border-radius: 4px;
-}
-
-.element-portfolio .ellipse-3 {
-  top: 15px;
-  left: 0;
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  background-color: #2d2d2d;
-  border-radius: 4px;
-}
-
-.element-portfolio .frame-2 {
+.frame .header {
   display: flex;
   flex-direction: column;
   width: 1280px;
-  align-items: flex-start;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.element-portfolio .header {
-  display: flex;
-  flex-direction: column;
   height: 755px;
   align-items: flex-start;
   gap: 10px;
   padding: 100px;
   position: relative;
-  align-self: stretch;
-  width: 1280px;
   background-color: #ffffff;
-  overflow: hidden;
 }
 
-.element-portfolio .image {
+.frame .image {
   position: absolute;
   width: 510px;
   height: 435px;
-  top: 100px;
-  right: 100px;
-  left: auto;
+  top: 70px;
+  left: 708px;
   object-fit: cover;
-  border-radius: 30px;
 }
 
-.element-portfolio .headline-subhead {
+.frame .headline-subhead {
   position: relative;
   width: 557px;
-  height: 380px;
-  z-index: 1;
-  margin-bottom: 40px;
+  height: 317px;
 }
 
-.element-portfolio .headline-subhead-2 {
+.frame .div {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 20px;
+  gap: 40px;
   position: relative;
-  top: 0;
+  top: 67px;
 }
 
-.element-portfolio .text-wrapper {
+.frame .text-wrapper-2 {
   position: relative;
   width: 557px;
   margin-top: -1.00px;
   font-family: "Epilogue", Helvetica;
   font-weight: 600;
-  color: var(--colorsorange);
+  color: #ff9500;
   font-size: 128px;
   letter-spacing: 0;
-  line-height: 128px;
+  line-height: 30px;
 }
 
-.element-portfolio .i-am-robert-s-le {
+.frame .i-am-robert-s-le {
   position: relative;
   width: 557px;
   font-family: "Epilogue", Helvetica;
@@ -148,11 +219,10 @@
   color: var(--black);
   font-size: 64px;
   letter-spacing: 0;
-  line-height: 76px;
-  margin-bottom: 20px;
+  line-height: 90px;
 }
 
-.element-portfolio .and-i-made-it-myself {
+.frame .and-i-made-it-myself {
   position: relative;
   width: 557px;
   font-family: var(--body-text-font-family);
@@ -162,39 +232,32 @@
   letter-spacing: var(--body-text-letter-spacing);
   line-height: var(--body-text-line-height);
   font-style: var(--body-text-font-style);
-  z-index: 1;
-  margin-top: 40px;
 }
 
-.element-portfolio .union {
+.frame .union {
   position: absolute;
   width: 49px;
   height: 49px;
-  bottom: 60px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
+  top: 645px;
+  left: 849px;
 }
 
-.element-portfolio .text-wrapper-2 {
+.frame .text-wrapper-3 {
   position: absolute;
   width: 419px;
   height: 90px;
-  bottom: 120px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 626px;
+  left: 419px;
   font-family: "Epilogue", Helvetica;
   font-weight: 600;
-  color: var(--colorsorange);
+  color: #ff9500;
   font-size: 80px;
   letter-spacing: 0;
   line-height: 90px;
   white-space: nowrap;
-  text-align: center;
-  z-index: 1;
 }
 
-.element-portfolio .logos-section {
+.frame .logos-section {
   display: flex;
   height: 263px;
   align-items: flex-start;
@@ -206,13 +269,13 @@
   background-color: #ffffff;
 }
 
-.element-portfolio .logos {
+.frame .logos {
   position: relative;
   width: 1120px;
   height: 247px;
 }
 
-.element-portfolio .skills-section {
+.frame .skills-section {
   display: flex;
   flex-direction: column;
   height: 543px;
@@ -226,17 +289,17 @@
   background-color: #ffffff;
 }
 
-.element-portfolio .skills {
+.frame .skills {
   display: inline-flex;
   align-items: flex-start;
   gap: 125px;
   position: relative;
   flex: 0 0 auto;
-  margin-top: -99.50px;
-  margin-bottom: -99.50px;
+  margin-top: -86.00px;
+  margin-bottom: -86.00px;
 }
 
-.element-portfolio .skill {
+.frame .skill {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
@@ -246,11 +309,11 @@
   transition: all 0.2s ease;
 }
 
-.element-portfolio .skill:hover {
+.frame .skill:hover {
   transform: translate(0, -5px);
 }
 
-.element-portfolio .skill-2 {
+.frame .skill-2 {
   gap: 56px;
   display: inline-flex;
   flex-direction: column;
@@ -259,21 +322,16 @@
   flex: 0 0 auto;
 }
 
-.element-portfolio .image-placeholder {
+.frame .image-placeholder {
   position: relative;
   width: 130px;
   height: 130px;
-  box-shadow: 0px 4px 4px #6d7bea40;
-  background: linear-gradient(
-      180deg,
-      rgba(255, 223, 15, 0) 0%,
-      rgba(255, 223, 15, 0.2) 100%
-    ), url(https://c.animaapp.com/md2qngs8fkuHHI/img/image-placeholder.png) 50%
-    50% / cover;
-  border-radius: 30px;
+  background-image: url(https://c.animaapp.com/POKXonIA/img/image-placeholder@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
-.element-portfolio .headline-subhead-3 {
+.frame .headline-subhead-2 {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
@@ -282,7 +340,7 @@
   flex: 0 0 auto;
 }
 
-.element-portfolio .main-title {
+.frame .main-title {
   position: relative;
   width: 249.9px;
   margin-top: -1.00px;
@@ -296,7 +354,7 @@
   font-style: var(--h3-font-style);
 }
 
-.element-portfolio .this-is-a-template {
+.frame .this-is-a-template {
   position: relative;
   width: 249.9px;
   font-family: var(--body-text-font-family);
@@ -309,7 +367,7 @@
   font-style: var(--body-text-font-style);
 }
 
-.element-portfolio .skill-wrapper {
+.frame .skill-wrapper {
   gap: 54px;
   transition: all 0.2s ease;
   display: inline-flex;
@@ -319,65 +377,59 @@
   flex: 0 0 auto;
 }
 
-.element-portfolio .skill-wrapper:hover {
+.frame .skill-wrapper:hover {
   transform: translate(0, -5px);
 }
 
-.element-portfolio .image-placeholder-2 {
-  background: linear-gradient(
-      180deg,
-      rgba(255, 0, 0, 0) 0%,
-      rgba(255, 0, 0, 0.2) 100%
-    ), url(https://c.animaapp.com/md2qngs8fkuHHI/img/image-placeholder-1.png)
-    50% 50% / cover;
+.frame .image-placeholder-2 {
+  background-image: url(https://c.animaapp.com/POKXonIA/img/image-placeholder-1@2x.png);
   position: relative;
   width: 130px;
   height: 130px;
-  border-radius: 30px;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
-.element-portfolio .image-placeholder-3 {
-  background: linear-gradient(
-      180deg,
-      rgba(42, 81, 254, 0) 0%,
-      rgba(42, 81, 254, 0.2) 100%
-    ), url(https://c.animaapp.com/md2qngs8fkuHHI/img/image-placeholder-2.png)
-    50% 50% / cover;
+.frame .image-placeholder-3 {
+  background-image: url(https://c.animaapp.com/POKXonIA/img/image-placeholder-2@2x.png);
   position: relative;
   width: 130px;
   height: 130px;
-  border-radius: 30px;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
-.element-portfolio .latest-work-section {
-  display: flex;
-  flex-direction: column;
-  min-width: 1280px;
-  max-width: 1280px;
-  align-items: center;
-  gap: 120px;
-  padding: 40px 100px;
+.frame .latest-work-section {
   position: relative;
+  align-self: stretch;
   width: 100%;
-  flex: 0 0 auto;
+  height: 4433px;
   background-color: #ffffff;
 }
 
-.element-portfolio .img {
+.frame .overlap {
   position: absolute;
   width: 1286px;
-  height: 103px;
-  top: 40px;
+  height: 125px;
+  top: 39px;
   left: -3px;
 }
 
-.element-portfolio .my-latest-work {
-  position: relative;
-  width: fit-content;
-  margin-top: -1.00px;
+.frame .ellipse {
+  position: absolute;
+  width: 1286px;
+  height: 103px;
+  top: 22px;
+  left: 0;
+}
+
+.frame .my-latest-work {
+  position: absolute;
+  top: 0;
+  left: 457px;
   font-family: "Epilogue", Helvetica;
   font-weight: 600;
-  color: var(--colorsorange);
+  color: #ff9500;
   font-size: 48px;
   text-align: center;
   letter-spacing: 0;
@@ -385,18 +437,17 @@
   white-space: nowrap;
 }
 
-.element-portfolio .work-cards-mobile {
+.frame .work-cards-mobile {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
   gap: 150px;
-  position: relative;
-  flex: 0 0 auto;
-  margin-left: -57.00px;
-  margin-right: -57.00px;
+  position: absolute;
+  top: 164px;
+  left: 43px;
 }
 
-.element-portfolio .work-card {
+.frame .work-card {
   height: 8px;
   display: flex;
   flex-direction: column;
@@ -406,7 +457,7 @@
   position: relative;
 }
 
-.element-portfolio .work-card-2 {
+.frame .frame-wrapper {
   display: flex;
   flex-direction: column;
   width: 1194px;
@@ -416,7 +467,7 @@
   flex: 0 0 auto;
 }
 
-.element-portfolio .frame-wrapper {
+.frame .div-wrapper {
   display: flex;
   align-items: flex-start;
   gap: 25px;
@@ -426,7 +477,7 @@
   flex: 0 0 auto;
 }
 
-.element-portfolio .frame-3 {
+.frame .div-2 {
   display: flex;
   width: 1194px;
   align-items: center;
@@ -434,25 +485,21 @@
   position: relative;
 }
 
-.element-portfolio .image-wrapper {
+.frame .image-wrapper {
   display: inline-flex;
   align-items: flex-start;
   gap: 25px;
   position: relative;
   flex: 0 0 auto;
-  border-radius: 30px;
-  overflow: hidden;
 }
 
-.element-portfolio .image-2 {
+.frame .img {
   position: relative;
   width: 680px;
   height: 680px;
-  border-radius: 30px;
-  object-fit: cover;
 }
 
-.element-portfolio .frame-4 {
+.frame .div-3 {
   display: flex;
   flex-direction: column;
   width: 489px;
@@ -462,7 +509,41 @@
   position: relative;
 }
 
-.element-portfolio .headline-subhead-4 {
+.frame .headline-subhead-3 {
+  position: relative;
+  width: 408px;
+  height: 87px;
+}
+
+.frame .project-title {
+  position: absolute;
+  width: 315px;
+  top: -1px;
+  left: 0;
+  font-family: var(--subtitle-font-family);
+  font-weight: var(--subtitle-font-weight);
+  color: var(--color-text-positive-default);
+  font-size: var(--subtitle-font-size);
+  letter-spacing: var(--subtitle-letter-spacing);
+  line-height: var(--subtitle-line-height);
+  font-style: var(--subtitle-font-style);
+}
+
+.frame .UI-art-drection {
+  position: absolute;
+  width: 315px;
+  top: 39px;
+  left: 0;
+  font-family: var(--body-text-font-family);
+  font-weight: var(--body-text-font-weight);
+  color: var(--black);
+  font-size: var(--body-text-font-size);
+  letter-spacing: var(--body-text-letter-spacing);
+  line-height: var(--body-text-line-height);
+  font-style: var(--body-text-font-style);
+}
+
+.frame .headline-subhead-4 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -473,20 +554,20 @@
   flex: 0 0 auto;
 }
 
-.element-portfolio .text-wrapper-3 {
+.frame .text-wrapper-4 {
   position: relative;
   width: 315px;
   margin-top: -1.00px;
   font-family: var(--subtitle-font-family);
   font-weight: var(--subtitle-font-weight);
-  color: var(--black);
+  color: var(--color-text-positive-on-positive-secondary);
   font-size: var(--subtitle-font-size);
   letter-spacing: var(--subtitle-letter-spacing);
   line-height: var(--subtitle-line-height);
   font-style: var(--subtitle-font-style);
 }
 
-.element-portfolio .text {
+.frame .text {
   position: relative;
   align-self: stretch;
   font-family: var(--body-text-font-family);
@@ -498,38 +579,14 @@
   font-style: var(--body-text-font-style);
 }
 
-.element-portfolio .headline-subhead-5 {
-  display: flex;
-  flex-direction: column;
-  width: 408px;
-  height: 87px;
-  align-items: flex-start;
-  gap: 10px;
-  position: relative;
-}
-
-.element-portfolio .UI-art-drection {
-  position: relative;
-  width: 315px;
-  margin-bottom: -6.00px;
-  font-family: var(--body-text-font-family);
-  font-weight: var(--body-text-font-weight);
-  color: var(--black);
-  font-size: var(--body-text-font-size);
-  letter-spacing: var(--body-text-letter-spacing);
-  line-height: var(--body-text-line-height);
-  font-style: var(--body-text-font-style);
-}
-
-.element-portfolio .image-3 {
+.frame .image-2 {
   position: relative;
   width: 680px;
   height: 680px;
-  border-radius: 30px;
   object-fit: cover;
 }
 
-.element-portfolio .work-card-3 {
+.frame .work-card-2 {
   height: 1px;
   display: flex;
   flex-direction: column;
@@ -539,7 +596,7 @@
   position: relative;
 }
 
-.element-portfolio .footer {
+.frame .footer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -552,7 +609,7 @@
   background-color: #ffffff;
 }
 
-.element-portfolio .footer-info {
+.frame .footer-info {
   align-items: center;
   gap: 70px;
   padding: 70px 0px 0px;
@@ -565,7 +622,7 @@
   flex: 0 0 auto;
 }
 
-.element-portfolio .footer-info-2 {
+.frame .footer-info-2 {
   display: inline-flex;
   align-items: flex-start;
   gap: 190px;
@@ -573,7 +630,7 @@
   flex: 0 0 auto;
 }
 
-.element-portfolio .contact-info {
+.frame .contact-info {
   display: inline-flex;
   flex-direction: column;
   height: 466px;
@@ -583,51 +640,54 @@
   flex: 0 0 auto;
 }
 
-.element-portfolio .div-2 {
+.frame .footer-message {
   align-items: flex-start;
-  gap: 40px;
+  gap: 20px;
   display: inline-flex;
   flex-direction: column;
   position: relative;
   flex: 0 0 auto;
 }
 
-.element-portfolio .let-s-work-together {
+.frame .let-s-work-together {
   position: relative;
   width: 360px;
   height: 201px;
   margin-top: -1.00px;
   font-family: "Epilogue", Helvetica;
   font-weight: 800;
-  color: var(--colorsorange);
+  color: #ff9500;
   font-size: 64px;
   letter-spacing: 0;
   line-height: 62px;
 }
 
-.element-portfolio .whether-you-re {
+.frame .i-built-this-website {
   position: relative;
   width: 360px;
   font-family: var(--body-text-font-family);
   font-weight: var(--body-text-font-weight);
-  color: transparent;
-  font-size: var(--body-text-font-size);
-  letter-spacing: var(--body-text-letter-spacing);
-  line-height: var(--body-text-line-height);
-  font-style: var(--body-text-font-style);
-}
-
-.element-portfolio .span {
   color: #2d2d2d;
-  font-family: var(--body-text-font-family);
-  font-style: var(--body-text-font-style);
-  font-weight: var(--body-text-font-weight);
+  font-size: var(--body-text-font-size);
   letter-spacing: var(--body-text-letter-spacing);
   line-height: var(--body-text-line-height);
-  font-size: var(--body-text-font-size);
+  font-style: var(--body-text-font-style);
+  margin-bottom: 20px;
 }
 
-.element-portfolio .text-wrapper-4 {
+.frame .contact-message {
+  position: relative;
+  width: 360px;
+  font-family: var(--body-text-font-family);
+  font-weight: var(--body-text-font-weight);
+  color: #2d2d2d;
+  font-size: var(--body-text-font-size);
+  letter-spacing: var(--body-text-letter-spacing);
+  line-height: var(--body-text-line-height);
+  font-style: var(--body-text-font-style);
+}
+
+.frame .text-wrapper-5 {
   color: #c57804;
   font-family: var(--body-text-font-family);
   font-style: var(--body-text-font-style);
@@ -637,14 +697,16 @@
   font-size: var(--body-text-font-size);
 }
 
-.element-portfolio .social-icons {
+.frame .text-fields {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
   position: relative;
-  width: 232px;
-  height: 36px;
-  margin-bottom: -60.00px;
+  flex: 0 0 auto;
 }
 
-.element-portfolio .text-fields {
+.frame .text-fields-2 {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
@@ -653,7 +715,7 @@
   flex: 0 0 auto;
 }
 
-.element-portfolio .text-input-desktop {
+.frame .text-input-desktop {
   width: 530px;
   padding: 21px 30px;
   position: relative;
@@ -672,7 +734,11 @@
   font-style: var(--body-text-font-style);
 }
 
-.element-portfolio .write-something-wrapper {
+.frame .text-input-desktop::placeholder {
+  color: #2d2d2d99;
+}
+
+.frame .write-something-wrapper {
   display: flex;
   width: 530px;
   align-items: flex-start;
@@ -683,7 +749,7 @@
   background-color: #f3f3f3;
 }
 
-.element-portfolio .write-something {
+.frame .write-something {
   position: relative;
   flex: 1;
   flex-grow: 1;
@@ -701,11 +767,11 @@
   font-style: var(--body-text-font-style);
 }
 
-.element-portfolio .write-something::placeholder {
+.frame .write-something::placeholder {
   color: #2d2d2d99;
 }
 
-.element-portfolio .button {
+.frame .button {
   all: unset;
   box-sizing: border-box;
   display: inline-flex;
@@ -714,16 +780,22 @@
   padding: 25px 82px;
   position: relative;
   flex: 0 0 auto;
-  background-color: var(--colorsorange);
+  background-color: #ff9500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.element-portfolio .text-wrapper-5 {
+.frame .button:hover {
+  background-color: #e68600;
+}
+
+.frame .text-wrapper-6 {
   position: relative;
   width: fit-content;
   margin-top: -1.00px;
   font-family: "Epilogue", Helvetica;
   font-weight: 600;
-  color: var(--labelsprimary);
+  color: #000000;
   font-size: 20px;
   text-align: center;
   letter-spacing: 0;
