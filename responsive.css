@@ -1,5 +1,3 @@
-/* responsive.css */
-
 /* ===== General styles for all screens up to 1280px ===== */
 @media screen and (max-width: 1280px) {
   .frame {
@@ -9,51 +7,53 @@
 
   .frame .header,
   .frame .skills-section,
-  .frame .latest-work-section{
+  .frame .latest-work-section {
     padding: 40px 20px;
   }
 
+  /* Keep headline-subhead block about 40-45% width on desktop/tablet */
   .frame .headline-subhead,
   .frame .and-i-made-it-myself {
-    width: 50%;
+    width: 45%;
     gap: 22px;
+    margin: 0 auto;
+    text-align: center;
   }
 
-  /* Decrease image sizing slightly */
+  /* Header video: keep width around 50%, center horizontally */
   .frame .image {
-    width: 50%; /* reduced from 100% */
-    left: 0;
-    gap: 22px;
+    width: 50%;
     position: relative;
-    margin: 0 auto;
+    margin: 0 auto 32px; /* add bottom margin for breathing */
   }
 
   .frame .text-input-desktop,
   .frame .write-something-wrapper {
-    gap: 22px;
     width: 100%;
+    gap: 22px;
   }
 
   /* Work card font size increase (desktop & tablet) */
   .frame .work-card .project-title,
   .frame .work-card .text-wrapper-4 {
     gap: 22px;
-    font-size: 20px; /* Increase for better visibility */
-    text-align: center; /* Center text */
+    font-size: 20px;
+    text-align: center;
   }
 
   .frame .footer-info-2 {
     flex-direction: column;
     gap: 40px;
-    align-items: center; /* Center footer items */
+    align-items: center;
   }
 
   .frame .footer {
     padding: 40px 20px;
-    text-align: center; /* Center footer content */
+    text-align: center;
   }
 }
 
+/* ===== Tablets up to 768px ===== */
 @media screen and (max-width: 768px) {
   .frame {
     width: 100%;
@@ -63,21 +63,22 @@
   .frame .header,
   .frame .skills-section,
   .frame .latest-work-section {
-     padding: 40px 20px;
+    padding: 40px 20px;
   }
 
+  /* Slightly wider text block (about 60%) on tablet for readability */
   .frame .headline-subhead,
   .frame .and-i-made-it-myself {
-    width: 50%;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
   }
 
-  /* Centered and resized image */
+  /* Header video width about 70% on tablet, keep aspect ratio */
   .frame .image {
-    width: 50%;
-    left: 0;
-    gap: 22px;
+    width: 70%;
     position: relative;
-    margin: 0 auto;
+    margin: 0 auto 32px;
   }
 
   .frame .skills {
@@ -98,13 +99,13 @@
   }
 
   .frame .text-wrapper-2 {
-    font-size: 66px;
+    font-size: 56px;
     text-align: center;
   }
 
   .frame .i-am-robert-s-le {
-    font-size: 34px;
-    line-height: 44px;
+    font-size: 28px;
+    line-height: 38px;
     display: block;
     margin-bottom: 10px;
     gap: 22px;
@@ -117,8 +118,8 @@
   }
 
   .frame .text-wrapper-3 {
-    font-size: 40px !important;
-    line-height: 50px !important;
+    font-size: 36px !important;
+    line-height: 44px !important;
     margin-top: 42px;
     margin-bottom: 42px;
     gap: 22px;
@@ -188,23 +189,38 @@
     gap: 42px;
     align-items: center;
   }
-
-  /* Commenting out Let's Work Together section */
-  /*
-  .frame .lets-work-together-section {
-    display: none;
-  }
-  */
 }
 
+/* ===== Mobile up to 480px ===== */
 @media screen and (max-width: 480px) {
+  .frame {
+    padding: 0 12px;
+  }
+
+  /* Text block full width for mobile */
+  .frame .headline-subhead,
+  .frame .and-i-made-it-myself {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  /* Header video wider on mobile for visibility */
+  .frame .image {
+    width: 90%;
+    position: relative;
+    margin: 0 auto 32px;
+  }
+
   .frame .text-wrapper-2 {
-    font-size: 48px;
+    font-size: 42px;
     text-align: center;
   }
 
   .frame .i-am-robert-s-le {
-    font-size: 24px;
+    font-size: 22px;
+    line-height: 28px;
     display: block;
     margin-bottom: 6px;
     text-align: center;
@@ -216,8 +232,8 @@
   }
 
   .frame .text-wrapper-3 {
-    font-size: 32px;
-    line-height: 44px;
+    font-size: 28px !important;
+    line-height: 36px !important;
     margin-top: 40px;
     margin-bottom: 40px;
     text-align: center;
@@ -225,7 +241,7 @@
   }
 
   .frame .my-latest-work {
-    font-size: 32px;
+    font-size: 28px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -262,6 +278,7 @@
   }
 }
 
+/* ===== Small mobile 360px and below ===== */
 @media screen and (max-width: 360px) {
   .frame .headline-subhead-3,
   .frame .headline-subhead-4 {
