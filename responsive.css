@@ -22,14 +22,13 @@
   .frame .headline-subhead{
     width: 45%;
     gap: 22px;
-    text-align: center;
+    text-align: left;
   }
 
   
   .frame .and-i-made-it-myself {
     width: 45%;
     gap: 22px;
-    margin: 0 auto;
     text-align: left;
   }
 
