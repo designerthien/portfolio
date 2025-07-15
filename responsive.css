@@ -1,14 +1,11 @@
 /* responsive.css */
 
-/* ===== Styles for screens up to 1280px wide ===== */
 @media screen and (max-width: 1280px) {
-  /* Main container frame adjustments */
   .frame {
     width: 100%;
     padding: 0 20px;
   }
 
-  /* Padding for header, skills, latest work, footer */
   .frame .header,
   .frame .skills-section,
   .frame .latest-work-section,
@@ -16,27 +13,23 @@
     padding: 40px 20px;
   }
 
-  /* Headline subhead and other text wrappers full width */
   .frame .headline-subhead,
   .frame .and-i-made-it-myself {
     width: 100%;
   }
 
-  /* Make image responsive */
   .frame .image {
     width: 100%;
     left: 0;
     position: relative;
   }
 
-  /* Footer info - stack vertically with gap */
   .frame .footer-info-2 {
     flex-direction: column;
     gap: 40px;
     align-items: flex-start;
   }
 
-  /* Input fields and write-something wrapper full width */
   .frame .text-input-desktop,
   .frame .write-something-wrapper {
     width: 100%;
@@ -53,11 +46,13 @@
     align-items: center;
   }
 
+  /* Added skill item styling for better horizontal layout */
   .frame .skills .text-wrapper {
     font-size: 16px;
     padding: 8px 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    background: #f9f9f9;
   }
 
   .frame .text-wrapper-2 {
@@ -170,4 +165,3 @@
     line-height: 24px;
   }
 }
-
