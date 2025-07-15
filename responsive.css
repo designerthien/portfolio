@@ -20,7 +20,7 @@
 
   /* Decrease image sizing slightly */
   .frame .image {
-    width: 70%; /* reduced from 100% */
+    width: 50%; /* reduced from 100% */
     left: 0;
     position: relative;
     margin: 0 auto;
@@ -64,13 +64,14 @@
 
   .frame .headline-subhead,
   .frame .and-i-made-it-myself {
-    width: 60%;
+    width: 50%;
   }
 
   /* Centered and resized image */
   .frame .image {
     width: 50%;
     left: 0;
+    gap: 22px;
     position: relative;
     margin: 0 auto;
   }
@@ -87,6 +88,7 @@
   .frame .skills .text-wrapper {
     font-size: 18px;
     padding: 10px 14px;
+    gap: 22px;
     border: 1px solid #ccc;
     border-radius: 4px;
   }
@@ -101,6 +103,7 @@
     line-height: 44px;
     display: block;
     margin-bottom: 10px;
+    gap: 22px;
     text-align: center;
   }
 
@@ -114,12 +117,14 @@
     line-height: 50px !important;
     margin-top: 42px;
     margin-bottom: 42px;
+    gap: 22px;
     text-align: center;
     width: 100%;
   }
 
   .frame .header {
     height: auto;
+    gap: 22px;
     padding: 32px 22px;
   }
 
