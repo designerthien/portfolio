@@ -6,17 +6,23 @@
   }
 
   .frame .header,
-  .frame .skills-section,
-  .frame .latest-work-section {
+  .frame .skills-section {
     padding: 40px 20px;
+    text-align: center;
   }
-
+ 
   /* Keep headline-subhead block about 40-45% width on desktop/tablet */
   .frame .headline-subhead,
   .frame .and-i-made-it-myself {
     width: 45%;
     gap: 22px;
     margin: 0 auto;
+    text-align: center;
+  }
+
+   
+  .frame .latest-work-section {
+    padding: 40px 20px;
     text-align: center;
   }
 
@@ -31,6 +37,7 @@
   .frame .write-something-wrapper {
     width: 100%;
     gap: 22px;
+    text-align: center;
   }
 
   /* Work card font size increase (desktop & tablet) */
@@ -52,6 +59,8 @@
     text-align: center;
   }
 }
+
+
 
 /* ===== Tablets up to 768px ===== */
 @media screen and (max-width: 768px) {
