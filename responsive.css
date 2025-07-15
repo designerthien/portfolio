@@ -19,10 +19,17 @@
     width: 100%;
   }
 
-  .frame .image {
+  /* Make main images responsive */
+  .frame .image,
+  .frame .img,
+  .frame .image-2,
+  .frame .image-wrapper {
     width: 100%;
-    left: 0;
-    position: relative;
+    height: auto;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
 
   .frame .footer-info-2 {
@@ -37,8 +44,8 @@
   }
 }
 
-/* ===== Styles for tablets and above (481px and up) ===== */
-@media screen and (min-width: 481px) {
+/* ===== Styles for tablets (standard approx 768px to 1024px) ===== */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
   /* --- SKILLS SECTION: horizontal flex with padding and border --- */
   .frame .skills {
     display: flex;
@@ -50,26 +57,63 @@
   }
 
   .frame .skills .text-wrapper {
-    font-size: 16px;
-    padding: 8px 12px;
+    font-size: 18px;
+    padding: 10px 14px;
     border: 1px solid #ccc;
     border-radius: 4px;
     background: #f9f9f9;
   }
+
+  /* Adjust fonts for tablet */
+  .frame .text-wrapper-2 {
+    font-size: 56px;
+  }
+
+  .frame .i-am-robert-s-le {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .frame .text-wrapper-3 {
+    font-size: 36px;
+  }
+
+  /* Responsive images for tablet */
+  .frame .image,
+  .frame .img,
+  .frame .image-2,
+  .frame .image-wrapper {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  /* Vertically center latest work section */
+  .frame .latest-work-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px; /* adjust as needed */
+    padding: 40px 20px;
+  }
 }
 
-/* ===== Styles for phones (480px and below) ===== */
+/* ===== Styles for phones (standard up to 480px) ===== */
 @media screen and (max-width: 480px) {
-  /* --- SKILLS SECTION: horizontal flex, smaller padding/font for phones --- */
+  /* --- SKILLS SECTION: horizontal flex with scroll --- */
   .frame .skills {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap; /* no wrapping on phones, horizontal scroll if overflow */
+    flex-wrap: nowrap; /* no wrapping */
     gap: 12px;
     justify-content: flex-start;
     align-items: center;
-    overflow-x: auto; /* allow horizontal scroll if too many skills */
-    padding-bottom: 10px; /* some spacing below skills */
+    overflow-x: auto; /* horizontal scroll */
+    padding-bottom: 10px;
   }
 
   .frame .skills .text-wrapper {
@@ -78,28 +122,46 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     background: #f9f9f9;
-    white-space: nowrap; /* prevent skill text wrap */
+    white-space: nowrap;
   }
 
-  /* Other phone styles */
+  /* Font size adjustments */
   .frame .text-wrapper-2 {
-    font-size: 48px;
+    font-size: 42px;
   }
 
   .frame .i-am-robert-s-le {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .frame .text-wrapper-3 {
-    font-size: 32px;
+    font-size: 28px;
   }
 
-  .frame .my-latest-work {
-    font-size: 32px;
-    left: 50%;
-    transform: translateX(-50%);
+  /* Responsive images for phones */
+  .frame .image,
+  .frame .img,
+  .frame .image-2,
+  .frame .image-wrapper {
+    max-width: 320px;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
 
+  /* Vertically center latest work section */
+  .frame .latest-work-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px; /* adjust as needed */
+    padding: 30px 10px;
+  }
+
+  /* Padding for container sections */
   .frame .skills-section,
   .frame .logos-section,
   .frame .latest-work-section,
