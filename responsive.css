@@ -1,5 +1,6 @@
 /* responsive.css */
 
+/* ===== Styles for screens up to 1280px wide ===== */
 @media screen and (max-width: 1280px) {
   .frame {
     width: 100%;
@@ -36,7 +37,9 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+/* ===== Styles for tablets and above (481px and up) ===== */
+@media screen and (min-width: 481px) {
+  /* --- SKILLS SECTION: horizontal flex with padding and border --- */
   .frame .skills {
     display: flex;
     flex-direction: row;
@@ -46,7 +49,6 @@
     align-items: center;
   }
 
-  /* Added skill item styling for better horizontal layout */
   .frame .skills .text-wrapper {
     font-size: 16px;
     padding: 8px 12px;
@@ -54,68 +56,32 @@
     border-radius: 4px;
     background: #f9f9f9;
   }
-
-  .frame .text-wrapper-2 {
-    font-size: 64px;
-  }
-
-  .frame .i-am-robert-s-le {
-    font-size: 32px;
-    line-height: 42px;
-  }
-
-  .frame .text-wrapper-3 {
-    font-size: 40px;
-  }
-
-  .frame .headline-subhead,
-  .frame .and-i-made-it-myself {
-    width: 100%;
-  }
-
-  .frame .header {
-    height: auto;
-    padding: 30px 20px;
-  }
-
-  .frame .footer-message,
-  .frame .contact-message,
-  .frame .i-built-this-website {
-    width: 100%;
-  }
-
-  .frame .frame-wrapper,
-  .frame .work-card,
-  .frame .work-card-2,
-  .frame .work-cards-mobile {
-    width: 100%;
-    left: 0;
-    padding: 0 10px;
-  }
-
-  .frame .div-2 {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .frame .img,
-  .frame .image-2 {
-    width: 100%;
-    height: auto;
-  }
-
-  .frame .div-3 {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-  }
-
-  .frame .logos-section {
-    margin-top: 100px;
-  }
 }
 
+/* ===== Styles for phones (480px and below) ===== */
 @media screen and (max-width: 480px) {
+  /* --- SKILLS SECTION: horizontal flex, smaller padding/font for phones --- */
+  .frame .skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; /* no wrapping on phones, horizontal scroll if overflow */
+    gap: 12px;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: auto; /* allow horizontal scroll if too many skills */
+    padding-bottom: 10px; /* some spacing below skills */
+  }
+
+  .frame .skills .text-wrapper {
+    font-size: 14px;
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #f9f9f9;
+    white-space: nowrap; /* prevent skill text wrap */
+  }
+
+  /* Other phone styles */
   .frame .text-wrapper-2 {
     font-size: 48px;
   }
@@ -152,7 +118,7 @@
   }
 }
 
-/* Mobile image stacking and typography simplification */
+/* ===== Styles for very small screens (up to 360px) ===== */
 @media screen and (max-width: 360px) {
   .frame .headline-subhead-3,
   .frame .headline-subhead-4 {
