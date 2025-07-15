@@ -9,10 +9,10 @@
 
   .frame .header,
   .frame .skills-section,
-  .frame .latest-work-section,
-  .frame .footer {
+  .frame .latest-work-section{
     padding: 40px 20px;
   }
+  
 
   .frame .headline-subhead,
   .frame .and-i-made-it-myself {
@@ -25,12 +25,7 @@
     position: relative;
   }
 
-  .frame .footer-info-2 {
-    flex-direction: column;
-    gap: 40px;
-    align-items: flex-start;
-  }
-
+  
   .frame .text-input-desktop,
   .frame .write-something-wrapper {
     width: 100%;
@@ -43,7 +38,45 @@
   }
 }
 
+
+  .frame .footer-info-2 {
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  .frame .footer {
+    padding: 40px 20px;
+  }
+
 @media screen and (max-width: 768px) {
+
+   .frame {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .frame .header,
+  .frame .skills-section,
+  .frame .latest-work-section {
+     padding: 40px 20px;
+  }
+  
+  .frame .headline-subhead,
+  .frame .and-i-made-it-myself {
+    width: 100%;
+  }
+
+  
+  .frame .image {
+    width: 100%;
+    left: 0;
+    position: relative;
+  }
+
+
+
+  
   .frame .skills {
     display: flex;
     flex-direction: row;
@@ -135,9 +168,15 @@
   }
 
   .frame .footer {
-    margin-top: 60px;
+    padding: 40px 20px;
   }
-}
+
+
+  .frame .footer-info-2 {
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+  }
 
 @media screen and (max-width: 480px) {
   .frame .text-wrapper-2 {
