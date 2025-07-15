@@ -1,199 +1,105 @@
-/* responsive.css */
-/* === BASE MOBILE RESET === */
-body {
-  padding: 0;
-  margin: 0;
-  font-family: "Epilogue", sans-serif;
-}
-
-/* === MOBILE FIRST RESPONSIVE RULES === */
-@media (max-width: 1280px) {
-  .frame {
-    width: 100%;
-    padding: 0 20px;
-@media screen and (max-width: 768px) {
-  .frame .frame-wrapper,
-  .frame .work-card,
-  .frame .work-card-2 {
-    width: 100% !important;
-    padding: 0 16px;
-    box-sizing: border-box;
-  }
-
-  .frame .header,
+/* Responsive adjustments for tablet and below */
+@media screen and (max-width: 1024px) {
+  .frame,
   .frame .navigation,
+  .frame .header,
   .frame .logos-section,
   .frame .skills-section,
   .frame .latest-work-section,
   .frame .footer {
-    width: 100%;
-    padding: 0 20px;
+    width: 100% !important;
+    max-width: 100vw !important;
+    padding-left: 16px;
+    padding-right: 16px;
     box-sizing: border-box;
-  .frame .div-2 {
-    flex-direction: column !important;
-    align-items: center !important;
-    width: 100% !important;
-  }
-
-  .frame .image,
-  .frame .img,
-  .frame .image-2,
-  .frame .image-wrapper {
-    width: 100% !important;
-    height: auto !important;
   }
 
   .frame .headline-subhead,
+  .frame .headline-subhead-2,
   .frame .div-3,
-  .frame .footer-info,
-  .frame .headline-subhead-2 {
-  .frame .div-3 {
-    width: 100% !important;
-    height: auto !important;
-    margin-top: 30px;
-    padding: 0 16px;
-    box-sizing: border-box;
-  }
-
-  .frame .div-2 {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .frame .frame-wrapper,
-  .frame .work-card,
-  .frame .work-card-2 {
-  .frame .headline-subhead-3,
-  .frame .headline-subhead-4 {
-    width: 100% !important;
-  }
-    
-@media screen and (max-width: 768px) {
-  .frame .skills {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  /* Added skill item styling for better horizontal layout */
-  .frame .skills .text-wrapper {
-    font-size: 16px;
-    padding: 8px 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background: #f9f9f9;
-  }
-
-  .frame .text-wrapper-2 {
-    font-size: 64px;
-  }
-
-  .frame .i-am-robert-s-le {
-    font-size: 32px;
-    line-height: 42px;
-  }
-
-  .frame .text-wrapper-3 {
-    font-size: 40px;
-  }
-
-  .frame .headline-subhead,
-  .frame .and-i-made-it-myself {
-    width: 100%;
-  }
-
-  .frame .header {
-    height: auto;
-    padding: 30px 20px;
-  }
-
-  .frame .footer-message,
-  .frame .contact-message,
-  .frame .i-built-this-website {
-    width: 100%;
-  }
-
-  .frame .frame-wrapper,
-  .frame .work-card,
-  .frame .work-card-2,
-  .frame .work-cards-mobile {
-    width: 100%;
-    left: 0;
-    padding: 0 10px;
-  }
-
-  .frame .div-2 {
-    flex-direction: column;
-    gap: 20px;
-  }
-
+  .frame .image-wrapper,
   .frame .img,
   .frame .image-2 {
-    width: 100%;
-    height: auto;
-  }
-
-  .frame .div-3 {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-  }
-
-  .frame .logos-section {
-    margin-top: 100px;
+    width: 100% !important;
+    max-width: 100vw !important;
+    height: auto !important;
   }
 }
 
-@media screen and (max-width: 480px) {
+/* Responsive adjustments for tablets and large phones */
+@media screen and (max-width: 768px) {
+  .frame .skills,
+  .frame .footer-info-2,
+  .frame .frame-wrapper,
+  .frame .div-wrapper,
+  .frame .div-2,
+  .frame .div-3 {
+    flex-direction: column !important;
+    gap: 24px !important;
+    width: 100% !important;
+  }
+
   .frame .text-wrapper-2 {
-    font-size: 48px;
+    font-size: 2.5rem !important;
+    line-height: 1.1 !important;
+    width: 100% !important;
   }
 
   .frame .i-am-robert-s-le {
-    font-size: 24px;
+    font-size: 1.5rem !important;
+    line-height: 1.2 !important;
+    width: 100% !important;
   }
 
   .frame .text-wrapper-3 {
-    font-size: 32px;
-  }
-
-  .frame .my-latest-work {
-    font-size: 32px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .frame .skills-section,
-  .frame .logos-section,
-  .frame .latest-work-section,
-  .frame .footer {
-    padding: 30px 10px;
-  }
-
-  .frame .text-input-desktop,
-  .frame .write-something-wrapper {
-    width: 100%;
+    font-size: 2rem !important;
+    width: 100% !important;
   }
 
   .frame .button {
-    width: 100%;
-    justify-content: center;
+    padding: 12px 28px !important;
+    font-size: 1rem !important;
   }
 }
 
-/* Mobile image stacking and typography simplification */
-@media screen and (max-width: 360px) {
-  .frame .headline-subhead-3,
-  .frame .headline-subhead-4 {
-    width: 100%;
+/* Responsive adjustments for mobile only */
+@media screen and (max-width: 480px) {
+  .frame,
+  .frame .navigation,
+  .frame .header,
+  .frame .logos-section,
+  .frame .skills-section,
+  .frame .latest-work-section,
+  .frame .footer,
+  .frame .text-input-desktop,
+  .frame .write-something-wrapper,
+  .frame .headline-subhead,
+  .frame .and-i-made-it-myself,
+  .frame .i-built-this-website,
+  .frame .contact-message {
+    width: 100% !important;
+    max-width: 100vw !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    box-sizing: border-box;
   }
 
-  .frame .text,
-  .frame .UI-art-drection {
-    font-size: 15px;
-    line-height: 24px;
+  .frame .text-wrapper-2 {
+    font-size: 2rem !important;
+  }
+
+  .frame .i-am-robert-s-le {
+    font-size: 1.2rem !important;
+    line-height: 1.1 !important;
+  }
+
+  .frame .let-s-work-together {
+    font-size: 1.3rem !important;
+    line-height: 1.1 !important;
+  }
+
+  .frame .button {
+    padding: 10px 18px !important;
+    font-size: 16px !important;
   }
 }
