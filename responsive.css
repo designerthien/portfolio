@@ -1,4 +1,4 @@
-/* ===== Responsive: Desktop (≤1280px) ===== */
+/* ===== Desktop (≤1280px) ===== */
 @media screen and (max-width: 1280px) {
   .frame {
     width: 100%;
@@ -17,17 +17,15 @@
   .frame .headline-subhead,
   .frame .and-i-made-it-myself,
   .frame .text-input-desktop,
-  .frame .write-something-wrapper,
-  .frame .work-card .project-title,
-  .frame .work-card .text-wrapper-4 {
+  .frame .write-something-wrapper {
     margin: 0 auto;
     text-align: center;
   }
 
-  .frame .headline-subhead,
-  .frame .and-i-made-it-myself {
-    width: 45%;
-    gap: 22px;
+  .frame .work-card .project-title,
+  .frame .work-card .text-wrapper-4 {
+    font-size: 20px;
+    text-align: center;
   }
 
   .frame .footer-info-2 {
@@ -37,7 +35,7 @@
   }
 }
 
-/* ===== Responsive: Tablet (≤768px) ===== */
+/* ===== Tablet (≤768px) ===== */
 @media screen and (max-width: 768px) {
   .frame {
     padding: 0 20px;
@@ -75,12 +73,6 @@
     margin: 42px 0;
   }
 
-  .frame .footer-info-2 {
-    flex-direction: column;
-    gap: 42px;
-    align-items: center;
-  }
-
   .frame .img,
   .frame .image-2 {
     width: 60%;
@@ -92,9 +84,13 @@
     width: 60%;
     margin-top: 22px;
   }
+
+  .frame .footer-info-2 {
+    gap: 42px;
+  }
 }
 
-/* ===== Responsive: Mobile (≤480px) ===== */
+/* ===== Mobile (≤480px) ===== */
 @media screen and (max-width: 480px) {
   .frame {
     padding: 0 12px;
@@ -144,7 +140,7 @@
   }
 }
 
-/* ===== Responsive: Small Phones (≤360px) ===== */
+/* ===== Small Phones (≤360px) ===== */
 @media screen and (max-width: 360px) {
   .frame .headline-subhead-3,
   .frame .headline-subhead-4 {
