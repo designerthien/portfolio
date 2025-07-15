@@ -1,41 +1,73 @@
 /* responsive.css */
+/* === BASE MOBILE RESET === */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Epilogue", sans-serif;
+}
 
-@media screen and (max-width: 1280px) {
+/* === MOBILE FIRST RESPONSIVE RULES === */
+@media (max-width: 1280px) {
   .frame {
     width: 100%;
     padding: 0 20px;
+@media screen and (max-width: 768px) {
+  .frame .frame-wrapper,
+  .frame .work-card,
+  .frame .work-card-2 {
+    width: 100% !important;
+    padding: 0 16px;
+    box-sizing: border-box;
   }
 
   .frame .header,
+  .frame .navigation,
+  .frame .logos-section,
   .frame .skills-section,
   .frame .latest-work-section,
   .frame .footer {
-    padding: 40px 20px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  .frame .div-2 {
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+
+  .frame .image,
+  .frame .img,
+  .frame .image-2,
+  .frame .image-wrapper {
+    width: 100% !important;
+    height: auto !important;
   }
 
   .frame .headline-subhead,
-  .frame .and-i-made-it-myself {
-    width: 100%;
+  .frame .div-3,
+  .frame .footer-info,
+  .frame .headline-subhead-2 {
+  .frame .div-3 {
+    width: 100% !important;
+    height: auto !important;
+    margin-top: 30px;
+    padding: 0 16px;
+    box-sizing: border-box;
   }
 
-  .frame .image {
-    width: 100%;
-    left: 0;
-    position: relative;
-  }
-
-  .frame .footer-info-2 {
+  .frame .div-2 {
     flex-direction: column;
-    gap: 40px;
-    align-items: flex-start;
+    align-items: center;
   }
 
-  .frame .text-input-desktop,
-  .frame .write-something-wrapper {
-    width: 100%;
+  .frame .frame-wrapper,
+  .frame .work-card,
+  .frame .work-card-2 {
+  .frame .headline-subhead-3,
+  .frame .headline-subhead-4 {
+    width: 100% !important;
   }
-}
-
+    
 @media screen and (max-width: 768px) {
   .frame .skills {
     display: flex;
