@@ -8,6 +8,136 @@
   margin: 0 auto;
 }
 
+/* ========== BASE STYLES ========== */
+.frame {
+  display: flex;
+  flex-direction: column;
+  width: 1280px;
+  margin: 0 auto;
+  align-items: flex-start;
+  position: relative;
+}
+
+/* ========== GLOBAL BLOCK STYLES ========== */
+.frame .headline-subhead,
+.frame .and-i-made-it-myself {
+  width: 100%;
+  margin: 0 auto;
+  gap: 22px;
+  text-align: center;
+}
+
+.frame .skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  text-align: center;
+}
+
+.frame .footer-info-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+}
+
+/* ========== TYPOGRAPHY BASE ========== */
+.frame .text-wrapper-2 {
+  font-size: 128px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #ff9500;
+  text-align: center;
+}
+
+.frame .i-am-robert-s-le {
+  font-size: 64px;
+  line-height: 90px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.frame .text-wrapper-3 {
+  font-size: 80px;
+  line-height: 90px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* ========== RESPONSIVE OVERRIDES ========== */
+@media screen and (max-width: 1280px) {
+  .frame {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .frame .headline-subhead,
+  .frame .and-i-made-it-myself {
+    width: 45%;
+  }
+
+  .frame .footer-info-2 {
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .frame .text-wrapper-2 {
+    font-size: 56px;
+  }
+
+  .frame .i-am-robert-s-le {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .frame .text-wrapper-3 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .frame .headline-subhead,
+  .frame .and-i-made-it-myself {
+    width: 60%;
+  }
+
+  .frame .footer-info-2 {
+    gap: 42px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .frame {
+    padding: 0 12px;
+  }
+
+  .frame .headline-subhead,
+  .frame .and-i-made-it-myself {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .frame .text-wrapper-2 {
+    font-size: 42px;
+  }
+
+  .frame .i-am-robert-s-le {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .frame .text-wrapper-3 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+
+
+
 @media screen and (max-width: 1280px) {
   .frame {
     width: 100%;
