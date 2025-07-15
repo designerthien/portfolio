@@ -1,114 +1,90 @@
-/* responsive.css */
+/* === BASE MOBILE RESET === */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Epilogue", sans-serif;
+}
 
-@media screen and (max-width: 1280px) {
+/* === MOBILE FIRST RESPONSIVE RULES === */
+@media (max-width: 1280px) {
   .frame {
     width: 100%;
     padding: 0 20px;
   }
 
   .frame .header,
+  .frame .navigation,
+  .frame .logos-section,
   .frame .skills-section,
   .frame .latest-work-section,
   .frame .footer {
-    padding: 40px 20px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .frame .image,
+  .frame .img,
+  .frame .image-2,
+  .frame .image-wrapper {
+    width: 100% !important;
+    height: auto !important;
   }
 
   .frame .headline-subhead,
-  .frame .and-i-made-it-myself {
-    width: 100%;
+  .frame .div-3,
+  .frame .footer-info,
+  .frame .headline-subhead-2 {
+    width: 100% !important;
   }
 
-  .frame .image {
-    width: 100%;
-    left: 0;
-    position: relative;
+  .frame .div-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .frame .frame-wrapper,
+  .frame .work-card,
+  .frame .work-card-2 {
+    width: 100% !important;
+  }
+
+  .frame .skills {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+  }
+
+  .frame .text-fields,
+  .frame .text-input-desktop,
+  .frame .write-something-wrapper {
+    width: 100% !important;
   }
 
   .frame .footer-info-2 {
     flex-direction: column;
     gap: 40px;
-    align-items: flex-start;
+    align-items: center;
   }
 
-  .frame .text-input-desktop,
-  .frame .write-something-wrapper {
-    width: 100%;
+  .frame .let-s-work-together {
+    font-size: 42px;
+    text-align: center;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .frame .skills {
-    flex-direction: column;
-    gap: 40px;
-  }
-
+@media (max-width: 768px) {
   .frame .text-wrapper-2 {
     font-size: 64px;
   }
 
   .frame .i-am-robert-s-le {
     font-size: 32px;
-    line-height: 42px;
+    line-height: 48px;
   }
 
   .frame .text-wrapper-3 {
-    font-size: 40px;
-  }
-
-  .frame .headline-subhead,
-  .frame .and-i-made-it-myself {
-    width: 100%;
-  }
-
-  .frame .header {
-    height: auto;
-    padding: 30px 20px;
-  }
-
-  .frame .footer-message,
-  .frame .contact-message,
-  .frame .i-built-this-website {
-    width: 100%;
-  }
-
-  .frame .frame-wrapper,
-  .frame .work-card,
-  .frame .work-card-2,
-  .frame .work-cards-mobile {
-    width: 100%;
-    left: 0;
-    padding: 0 10px;
-  }
-
-  .frame .div-2 {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .frame .img,
-  .frame .image-2 {
-    width: 100%;
-    height: auto;
-  }
-
-  .frame .div-3 {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .frame .text-wrapper-2 {
-    font-size: 48px;
-  }
-
-  .frame .i-am-robert-s-le {
-    font-size: 24px;
-  }
-
-  .frame .text-wrapper-3 {
-    font-size: 32px;
+    font-size: 36px;
   }
 
   .frame .my-latest-work {
@@ -117,35 +93,33 @@
     transform: translateX(-50%);
   }
 
-  .frame .skills-section,
-  .frame .logos-section,
-  .frame .latest-work-section,
-  .frame .footer {
-    padding: 30px 10px;
-  }
-
-  .frame .text-input-desktop,
-  .frame .write-something-wrapper {
-    width: 100%;
-  }
-
-  .frame .button {
-    width: 100%;
-    justify-content: center;
-  }
-}
-
-/* Mobile image stacking and typography simplification */
-@media screen and (max-width: 360px) {
-  .frame .headline-subhead-3,
-  .frame .headline-subhead-4 {
-    width: 100%;
-  }
-
-  .frame .text,
-  .frame .UI-art-drection {
+  .frame .headline-subhead-4 .text,
+  .frame .headline-subhead-3 .UI-art-drection {
     font-size: 15px;
     line-height: 24px;
   }
 }
 
+@media (max-width: 480px) {
+  .frame .button {
+    width: 100%;
+    justify-content: center;
+    padding: 18px 30px;
+  }
+
+  .frame .text-wrapper-6 {
+    font-size: 16px;
+  }
+
+  .frame .let-s-work-together {
+    font-size: 36px;
+  }
+
+  .frame .image {
+    margin-top: 20px;
+  }
+
+  .frame .headline-subhead {
+    padding: 0;
+  }
+}
