@@ -1,0 +1,804 @@
+.frame {
+  display: flex;
+  flex-direction: column;
+  height: 6688px;
+  width: 1280px;
+  align-items: flex-start;
+  position: relative;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1280px) {
+  .frame {
+    width: 100%;
+  }
+  
+  .frame .navigation,
+  .frame .header,
+  .frame .logos-section,
+  .frame .skills-section,
+  .frame .latest-work-section,
+  .frame .footer {
+    width: 100%;
+  }
+  
+  .frame .logos {
+    width: 100%;
+  }
+  
+  .frame .work-cards-mobile {
+    width: 90%;
+    left: 5%;
+  }
+  
+  .frame .frame-wrapper,
+  .frame .work-card,
+  .frame .work-card-2 {
+    width: 100%;
+  }
+  
+  .frame .div-2 {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .frame .image-wrapper,
+  .frame .img,
+  .frame .image-2 {
+    width: 100%;
+    height: auto;
+  }
+  
+  .frame .div-3 {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+  }
+  
+  .frame .footer-info-2 {
+    flex-direction: column;
+    gap: 60px;
+  }
+  
+  .frame .text-input-desktop,
+  .frame .write-something-wrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .frame .skills {
+    flex-direction: column;
+    gap: 60px;
+  }
+  
+  .frame .text-wrapper-2 {
+    font-size: 80px;
+  }
+  
+  .frame .i-am-robert-s-le {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  
+  .frame .text-wrapper-3 {
+    font-size: 60px;
+  }
+  
+  .frame .headline-subhead,
+  .frame .and-i-made-it-myself {
+    width: 100%;
+  }
+  
+  .frame .image {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 30px auto;
+  }
+  
+  .frame .header {
+    height: auto;
+    padding: 50px 20px;
+  }
+  
+  .frame .i-built-this-website,
+  .frame .contact-message {
+    width: 100%;
+  }
+}
+
+.frame .navigation {
+  position: relative;
+  width: 1280px;
+  height: 80px;
+  background-color: #ffffff;
+}
+
+.frame .overlap-group {
+  position: absolute;
+  width: 172px;
+  height: 44px;
+  top: 19px;
+  left: 1071px;
+}
+
+.frame .rectangle {
+  position: absolute;
+  width: 139px;
+  height: 43px;
+  top: 0;
+  left: 17px;
+}
+
+.frame .about-me-link {
+  position: absolute;
+  width: 139px;
+  height: 44px;
+  top: 0;
+  left: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frame .about-me-link::after {
+  content: "ABOUT ME";
+  font-family: "Epilogue", Helvetica;
+  font-weight: 600;
+  color: var(--color-text-neutral-on-neutral);
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 44px;
+  white-space: nowrap;
+}
+
+.frame .asset {
+  position: absolute;
+  width: 76px;
+  height: 77px;
+  top: 2px;
+  left: 19px;
+  object-fit: cover;
+}
+
+.frame .header {
+  display: flex;
+  flex-direction: column;
+  width: 1280px;
+  height: 755px;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 100px;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.frame .image {
+  position: absolute;
+  width: 510px;
+  height: 435px;
+  top: 70px;
+  left: 708px;
+  object-fit: cover;
+}
+
+.frame .headline-subhead {
+  position: relative;
+  width: 557px;
+  height: 317px;
+}
+
+.frame .div {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  position: relative;
+  top: 67px;
+}
+
+.frame .text-wrapper-2 {
+  position: relative;
+  width: 557px;
+  margin-top: -1.00px;
+  font-family: "Epilogue", Helvetica;
+  font-weight: 600;
+  color: #ff9500;
+  font-size: 128px;
+  letter-spacing: 0;
+  line-height: 30px;
+}
+
+.frame .i-am-robert-s-le {
+  position: relative;
+  width: 557px;
+  font-family: "Epilogue", Helvetica;
+  font-weight: 600;
+  color: var(--black);
+  font-size: 64px;
+  letter-spacing: 0;
+  line-height: 90px;
+}
+
+.frame .and-i-made-it-myself {
+  position: relative;
+  width: 557px;
+  font-family: var(--body-text-font-family);
+  font-weight: var(--body-text-font-weight);
+  color: var(--black);
+  font-size: var(--body-text-font-size);
+  letter-spacing: var(--body-text-letter-spacing);
+  line-height: var(--body-text-line-height);
+  font-style: var(--body-text-font-style);
+}
+
+.frame .union {
+  position: absolute;
+  width: 49px;
+  height: 49px;
+  top: 645px;
+  left: 849px;
+}
+
+.frame .text-wrapper-3 {
+  position: absolute;
+  width: 419px;
+  height: 90px;
+  top: 626px;
+  left: 419px;
+  font-family: "Epilogue", Helvetica;
+  font-weight: 600;
+  color: #ff9500;
+  font-size: 80px;
+  letter-spacing: 0;
+  line-height: 90px;
+  white-space: nowrap;
+}
+
+.frame .logos-section {
+  display: flex;
+  height: 263px;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 0px 80px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.frame .logos {
+  position: relative;
+  width: 1120px;
+  height: 247px;
+}
+
+.frame .skills-section {
+  display: flex;
+  flex-direction: column;
+  height: 543px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 180px 140px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.frame .skills {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 125px;
+  position: relative;
+  flex: 0 0 auto;
+  margin-top: -86.00px;
+  margin-bottom: -86.00px;
+}
+
+.frame .skill {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+  position: relative;
+  flex: 0 0 auto;
+  transition: all 0.2s ease;
+}
+
+.frame .skill:hover {
+  transform: translate(0, -5px);
+}
+
+.frame .skill-2 {
+  gap: 56px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .image-placeholder {
+  position: relative;
+  width: 130px;
+  height: 130px;
+  background-image: url(https://c.animaapp.com/POKXonIA/img/image-placeholder@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.frame .headline-subhead-2 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 19px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .main-title {
+  position: relative;
+  width: 249.9px;
+  margin-top: -1.00px;
+  font-family: var(--h3-font-family);
+  font-weight: var(--h3-font-weight);
+  color: var(--black);
+  font-size: var(--h3-font-size);
+  text-align: center;
+  letter-spacing: var(--h3-letter-spacing);
+  line-height: var(--h3-line-height);
+  font-style: var(--h3-font-style);
+}
+
+.frame .this-is-a-template {
+  position: relative;
+  width: 249.9px;
+  font-family: var(--body-text-font-family);
+  font-weight: var(--body-text-font-weight);
+  color: var(--black);
+  font-size: var(--body-text-font-size);
+  text-align: center;
+  letter-spacing: var(--body-text-letter-spacing);
+  line-height: var(--body-text-line-height);
+  font-style: var(--body-text-font-style);
+}
+
+.frame .skill-wrapper {
+  gap: 54px;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .skill-wrapper:hover {
+  transform: translate(0, -5px);
+}
+
+.frame .image-placeholder-2 {
+  background-image: url(https://c.animaapp.com/POKXonIA/img/image-placeholder-1@2x.png);
+  position: relative;
+  width: 130px;
+  height: 130px;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.frame .image-placeholder-3 {
+  background-image: url(https://c.animaapp.com/POKXonIA/img/image-placeholder-2@2x.png);
+  position: relative;
+  width: 130px;
+  height: 130px;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.frame .latest-work-section {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: 4433px;
+  background-color: #ffffff;
+}
+
+.frame .overlap {
+  position: absolute;
+  width: 1286px;
+  height: 125px;
+  top: 39px;
+  left: -3px;
+}
+
+.frame .ellipse {
+  position: absolute;
+  width: 1286px;
+  height: 103px;
+  top: 22px;
+  left: 0;
+}
+
+.frame .my-latest-work {
+  position: absolute;
+  top: 0;
+  left: 457px;
+  font-family: "Epilogue", Helvetica;
+  font-weight: 600;
+  color: #ff9500;
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 42px;
+  white-space: nowrap;
+}
+
+.frame .work-cards-mobile {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 150px;
+  position: absolute;
+  top: 164px;
+  left: 43px;
+}
+
+.frame .work-card {
+  height: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 1194px;
+  align-items: flex-start;
+  gap: 25px;
+  position: relative;
+}
+
+.frame .frame-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 1194px;
+  align-items: flex-start;
+  gap: 25px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .div-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.frame .div-2 {
+  display: flex;
+  width: 1194px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.frame .image-wrapper {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 25px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .img {
+  position: relative;
+  width: 680px;
+  height: 680px;
+}
+
+.frame .div-3 {
+  display: flex;
+  flex-direction: column;
+  width: 489px;
+  height: 680px;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+}
+
+.frame .headline-subhead-3 {
+  position: relative;
+  width: 408px;
+  height: 87px;
+}
+
+.frame .project-title {
+  position: absolute;
+  width: 315px;
+  top: -1px;
+  left: 0;
+  font-family: var(--subtitle-font-family);
+  font-weight: var(--subtitle-font-weight);
+  color: var(--color-text-positive-default);
+  font-size: var(--subtitle-font-size);
+  letter-spacing: var(--subtitle-letter-spacing);
+  line-height: var(--subtitle-line-height);
+  font-style: var(--subtitle-font-style);
+}
+
+.frame .UI-art-drection {
+  position: absolute;
+  width: 315px;
+  top: 39px;
+  left: 0;
+  font-family: var(--body-text-font-family);
+  font-weight: var(--body-text-font-weight);
+  color: var(--black);
+  font-size: var(--body-text-font-size);
+  letter-spacing: var(--body-text-letter-spacing);
+  line-height: var(--body-text-line-height);
+  font-style: var(--body-text-font-style);
+}
+
+.frame .headline-subhead-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.frame .text-wrapper-4 {
+  position: relative;
+  width: 315px;
+  margin-top: -1.00px;
+  font-family: var(--subtitle-font-family);
+  font-weight: var(--subtitle-font-weight);
+  color: var(--color-text-positive-on-positive-secondary);
+  font-size: var(--subtitle-font-size);
+  letter-spacing: var(--subtitle-letter-spacing);
+  line-height: var(--subtitle-line-height);
+  font-style: var(--subtitle-font-style);
+}
+
+.frame .text {
+  position: relative;
+  align-self: stretch;
+  font-family: var(--body-text-font-family);
+  font-weight: var(--body-text-font-weight);
+  color: var(--black);
+  font-size: var(--body-text-font-size);
+  letter-spacing: var(--body-text-letter-spacing);
+  line-height: var(--body-text-line-height);
+  font-style: var(--body-text-font-style);
+}
+
+.frame .image-2 {
+  position: relative;
+  width: 680px;
+  height: 680px;
+  object-fit: cover;
+}
+
+.frame .work-card-2 {
+  height: 1px;
+  display: flex;
+  flex-direction: column;
+  width: 1194px;
+  align-items: flex-start;
+  gap: 25px;
+  position: relative;
+}
+
+.frame .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 0px 100px 70px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: #ffffff;
+}
+
+.frame .footer-info {
+  align-items: center;
+  gap: 70px;
+  padding: 70px 0px 0px;
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-color: #00000033;
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .footer-info-2 {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 190px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .contact-info {
+  display: inline-flex;
+  flex-direction: column;
+  height: 466px;
+  align-items: flex-start;
+  gap: 60px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .footer-message {
+  align-items: flex-start;
+  gap: 20px;
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .let-s-work-together {
+  position: relative;
+  width: 360px;
+  height: 201px;
+  margin-top: -1.00px;
+  font-family: "Epilogue", Helvetica;
+  font-weight: 800;
+  color: #ff9500;
+  font-size: 64px;
+  letter-spacing: 0;
+  line-height: 62px;
+}
+
+.frame .i-built-this-website {
+  position: relative;
+  width: 360px;
+  font-family: var(--body-text-font-family);
+  font-weight: var(--body-text-font-weight);
+  color: #2d2d2d;
+  font-size: var(--body-text-font-size);
+  letter-spacing: var(--body-text-letter-spacing);
+  line-height: var(--body-text-line-height);
+  font-style: var(--body-text-font-style);
+  margin-bottom: 20px;
+}
+
+.frame .contact-message {
+  position: relative;
+  width: 360px;
+  font-family: var(--body-text-font-family);
+  font-weight: var(--body-text-font-weight);
+  color: #2d2d2d;
+  font-size: var(--body-text-font-size);
+  letter-spacing: var(--body-text-letter-spacing);
+  line-height: var(--body-text-line-height);
+  font-style: var(--body-text-font-style);
+}
+
+.frame .text-wrapper-5 {
+  color: #c57804;
+  font-family: var(--body-text-font-family);
+  font-style: var(--body-text-font-style);
+  font-weight: var(--body-text-font-weight);
+  letter-spacing: var(--body-text-letter-spacing);
+  line-height: var(--body-text-line-height);
+  font-size: var(--body-text-font-size);
+}
+
+.frame .text-fields {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .text-fields-2 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .text-input-desktop {
+  width: 530px;
+  padding: 21px 30px;
+  position: relative;
+  background-color: #f3f3f3;
+  border: 0;
+  flex: 1;
+  flex-grow: 1;
+  height: 27px;
+  margin-top: -1.00px;
+  font-family: var(--body-text-font-family);
+  font-weight: var(--body-text-font-weight);
+  color: #2d2d2d;
+  font-size: var(--body-text-font-size);
+  letter-spacing: var(--body-text-letter-spacing);
+  line-height: var(--body-text-line-height);
+  font-style: var(--body-text-font-style);
+}
+
+.frame .text-input-desktop::placeholder {
+  color: #2d2d2d99;
+}
+
+.frame .write-something-wrapper {
+  display: flex;
+  width: 530px;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 21px 30px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: #f3f3f3;
+}
+
+.frame .write-something {
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+  height: 189px;
+  margin-top: -1.00px;
+  background-color: transparent;
+  font-family: var(--body-text-font-family);
+  font-weight: var(--body-text-font-weight);
+  color: #2d2d2d;
+  font-size: var(--body-text-font-size);
+  letter-spacing: var(--body-text-letter-spacing);
+  line-height: var(--body-text-line-height);
+  border: 0;
+  padding: 0;
+  font-style: var(--body-text-font-style);
+}
+
+.frame .write-something::placeholder {
+  color: #2d2d2d99;
+}
+
+.frame .button {
+  all: unset;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 25px 82px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: #ff9500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.frame .button:hover {
+  background-color: #e68600;
+}
+
+.frame .text-wrapper-6 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Epilogue", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 30px;
+  white-space: nowrap;
+}
