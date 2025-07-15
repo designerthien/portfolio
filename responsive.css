@@ -20,7 +20,7 @@
 
   /* Decrease image sizing slightly */
   .frame .image {
-    width: 90%; /* reduced from 100% */
+    width: 70%; /* reduced from 100% */
     left: 0;
     position: relative;
     margin: 0 auto;
