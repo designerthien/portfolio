@@ -18,10 +18,12 @@
     width: 100%;
   }
 
+  /* Decrease image sizing slightly */
   .frame .image {
-    width: 100%;
+    width: 90%; /* reduced from 100% */
     left: 0;
     position: relative;
+    margin: 0 auto;
   }
 
   .frame .text-input-desktop,
@@ -33,21 +35,22 @@
   .frame .work-card .project-title,
   .frame .work-card .text-wrapper-4 {
     font-size: 20px; /* Increase for better visibility */
+    text-align: center; /* Center text */
   }
 
   .frame .footer-info-2 {
     flex-direction: column;
     gap: 40px;
-    align-items: flex-start;
+    align-items: center; /* Center footer items */
   }
 
   .frame .footer {
     padding: 40px 20px;
+    text-align: center; /* Center footer content */
   }
 }
 
 @media screen and (max-width: 768px) {
-
   .frame {
     width: 100%;
     padding: 0 20px;
@@ -64,65 +67,67 @@
     width: 100%;
   }
 
+  /* Centered and resized image */
   .frame .image {
-    width: 100%;
+    width: 88%;
     left: 0;
     position: relative;
+    margin: 0 auto;
   }
 
   .frame .skills {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 22px; /* Increased by 2 */
+    gap: 22px;
     justify-content: center;
     align-items: center;
   }
 
   .frame .skills .text-wrapper {
-    font-size: 18px; /* Increased by 2 */
-    padding: 10px 14px; /* Increased by 2 */
+    font-size: 18px;
+    padding: 10px 14px;
     border: 1px solid #ccc;
     border-radius: 4px;
   }
 
-  /* “Hello” text and intro */
   .frame .text-wrapper-2 {
-    font-size: 66px; /* Increased by 2 */
+    font-size: 66px;
+    text-align: center;
   }
 
   .frame .i-am-robert-s-le {
-    font-size: 34px; /* Increased by 2 */
-    line-height: 44px; /* Increased by 2 */
+    font-size: 34px;
+    line-height: 44px;
     display: block;
-    margin-bottom: 10px; /* Increased by 2 */
+    margin-bottom: 10px;
+    text-align: center;
   }
 
-  /* "Graphic designer" appears on new line */
   .frame .i-am-robert-s-le::after {
     content: "\A Graphic designer";
     white-space: pre;
   }
 
-  /* Portfolio heading spacing and font size */
   .frame .text-wrapper-3 {
-    font-size: 40px !important; /* Increased by 2 */
-    line-height: 50px !important; /* Increased by 2 */
-    margin-top: 42px;   /* Increased by 2 */
-    margin-bottom: 42px; /* Increased by 2 */
+    font-size: 40px !important;
+    line-height: 50px !important;
+    margin-top: 42px;
+    margin-bottom: 42px;
     text-align: center;
     width: 100%;
   }
 
   .frame .header {
     height: auto;
-    padding: 32px 22px; /* Increased by 2 */
+    padding: 32px 22px;
   }
 
   .frame .footer-message,
   .frame .contact-message,
   .frame .i-built-this-website {
     width: 100%;
+    text-align: center;
   }
 
   .frame .frame-wrapper,
@@ -131,63 +136,74 @@
   .frame .work-cards-mobile {
     width: 100%;
     left: 0;
-    padding: 0 12px; /* Increased by 2 */
+    padding: 0 12px;
+    text-align: center;
   }
 
   .frame .work-card .project-title,
   .frame .work-card .text-wrapper-4 {
-    font-size: 20px; /* Increased by 2 */
+    font-size: 20px;
+    text-align: center;
   }
 
   .frame .div-2 {
     flex-direction: column;
-    gap: 22px; /* Increased by 2 */
+    gap: 22px;
+    align-items: center;
   }
 
   .frame .img,
   .frame .image-2 {
-    width: 100%;
+    width: 88%;
     height: auto;
+    margin: 0 auto;
   }
 
   .frame .div-3 {
     width: 100%;
     height: auto;
-    margin-top: 22px; /* Increased by 2 */
+    margin-top: 22px;
+    text-align: center;
   }
 
   .frame .logos-section {
-    margin-top: 102px; /* Increased by 2 */
+    margin-top: 102px;
+    text-align: center;
   }
 
   .frame .footer {
-    padding: 42px 22px; /* Increased by 2 */
+    padding: 42px 22px;
+    order: 9999;
+    text-align: center;
   }
 
   .frame .footer-info-2 {
     flex-direction: column;
-    gap: 42px; /* Increased by 2 */
-    align-items: flex-start;
+    gap: 42px;
+    align-items: center;
   }
 
-  /* Move footer to very end of layout */
-  .frame .footer {
-    order: 9999;
+  /* Commenting out Let's Work Together section */
+  /*
+  .frame .lets-work-together-section {
+    display: none;
   }
+  */
 }
 
 @media screen and (max-width: 480px) {
   .frame .text-wrapper-2 {
     font-size: 48px;
+    text-align: center;
   }
 
   .frame .i-am-robert-s-le {
     font-size: 24px;
     display: block;
     margin-bottom: 6px;
+    text-align: center;
   }
 
-  /* “Graphic designer” goes to next line */
   .frame .i-am-robert-s-le::after {
     content: "\A Graphic designer";
     white-space: pre;
@@ -197,7 +213,7 @@
     font-size: 32px;
     line-height: 44px;
     margin-top: 40px;
-    margin-bottom: 40px; /* space from skills section */
+    margin-bottom: 40px;
     text-align: center;
     width: 100%;
   }
@@ -206,6 +222,7 @@
     font-size: 32px;
     left: 50%;
     transform: translateX(-50%);
+    text-align: center;
   }
 
   .frame .skills-section,
@@ -213,6 +230,7 @@
   .frame .latest-work-section,
   .frame .footer {
     padding: 30px 10px;
+    text-align: center;
   }
 
   .frame .text-input-desktop,
@@ -227,30 +245,33 @@
 
   .frame .work-card .project-title,
   .frame .work-card .text-wrapper-4 {
-    font-size: 17px; /* Slightly larger on phones */
+    font-size: 17px;
+    text-align: center;
   }
 
   .frame .footer {
     margin-top: 50px;
-    order: 9999; /* Ensures it's always last */
+    order: 9999;
+    text-align: center;
   }
 }
 
-/* Mobile image stacking and typography simplification */
 @media screen and (max-width: 360px) {
   .frame .headline-subhead-3,
   .frame .headline-subhead-4 {
     width: 100%;
+    text-align: center;
   }
 
   .frame .text,
   .frame .UI-art-drection {
     font-size: 15px;
     line-height: 24px;
+    text-align: center;
   }
 
-  /* Footer spacing */
   .frame .footer {
     margin-top: 40px;
+    text-align: center;
   }
 }
