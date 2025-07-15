@@ -1,29 +1,18 @@
-/* === BASE MOBILE RESET === */
-body {
-  padding: 0;
-  margin: 0;
-  font-family: "Epilogue", sans-serif;
-}
-
-/* === MOBILE FIRST RESPONSIVE RULES === */
-@media (max-width: 1280px) {
-  .frame {
-    width: 100%;
-    padding: 0 20px;
-  }
-
-  .frame .header,
-  .frame .navigation,
-  .frame .logos-section,
-  .frame .skills-section,
-  .frame .latest-work-section,
-  .frame .footer {
-    width: 100%;
-    padding: 0 20px;
+@media screen and (max-width: 768px) {
+  .frame .frame-wrapper,
+  .frame .work-card,
+  .frame .work-card-2 {
+    width: 100% !important;
+    padding: 0 16px;
     box-sizing: border-box;
   }
 
-  .frame .image,
+  .frame .div-2 {
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+
   .frame .img,
   .frame .image-2,
   .frame .image-wrapper {
@@ -31,95 +20,59 @@ body {
     height: auto !important;
   }
 
-  .frame .headline-subhead,
-  .frame .div-3,
-  .frame .footer-info,
-  .frame .headline-subhead-2 {
+  .frame .div-3 {
+    width: 100% !important;
+    height: auto !important;
+    margin-top: 30px;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+
+  .frame .headline-subhead-3,
+  .frame .headline-subhead-4 {
     width: 100% !important;
   }
 
-  .frame .div-2 {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .frame .frame-wrapper,
-  .frame .work-card,
-  .frame .work-card-2 {
+  .frame .project-title,
+  .frame .UI-art-drection,
+  .frame .text-wrapper-4,
+  .frame .text {
     width: 100% !important;
+    text-align: left !important;
   }
 
-  .frame .skills {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 60px;
+  .frame .text-wrapper-3 {
+    font-size: 36px;
+    line-height: 48px;
+    width: 100%;
+    text-align: center;
   }
 
-  .frame .text-fields,
+  .frame .footer-info-2 {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 40px;
+  }
+
   .frame .text-input-desktop,
   .frame .write-something-wrapper {
     width: 100% !important;
   }
 
-  .frame .footer-info-2 {
-    flex-direction: column;
-    gap: 40px;
-    align-items: center;
-  }
-
-  .frame .let-s-work-together {
-    font-size: 42px;
-    text-align: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .frame .text-wrapper-2 {
-    font-size: 64px;
-  }
-
-  .frame .i-am-robert-s-le {
-    font-size: 32px;
-    line-height: 48px;
-  }
-
-  .frame .text-wrapper-3 {
-    font-size: 36px;
+  .frame .headline-subhead,
+  .frame .and-i-made-it-myself {
+    width: 100% !important;
+    padding: 0 16px;
   }
 
   .frame .my-latest-work {
-    font-size: 32px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .frame .headline-subhead-4 .text,
-  .frame .headline-subhead-3 .UI-art-drection {
-    font-size: 15px;
-    line-height: 24px;
-  }
-}
-
-@media (max-width: 480px) {
-  .frame .button {
-    width: 100%;
-    justify-content: center;
-    padding: 18px 30px;
-  }
-
-  .frame .text-wrapper-6 {
-    font-size: 16px;
-  }
-
-  .frame .let-s-work-together {
     font-size: 36px;
+    left: 0;
+    width: 100%;
+    text-align: center;
   }
 
-  .frame .image {
-    margin-top: 20px;
-  }
-
-  .frame .headline-subhead {
-    padding: 0;
+  .frame .overlap {
+    left: 0 !important;
   }
 }
