@@ -1,6 +1,6 @@
 /* responsive.css */
 
-/* ===== Styles for screens up to 1280px wide ===== */
+/* ===== General styles for all screens up to 1280px ===== */
 @media screen and (max-width: 1280px) {
   .frame {
     width: 100%;
@@ -19,34 +19,28 @@
     width: 100%;
   }
 
-  /* Make main images responsive */
+  /* Responsive images for larger tablets and desktops */
   .frame .image,
   .frame .img,
   .frame .image-2,
   .frame .image-wrapper {
+    max-width: 600px;
     width: 100%;
     height: auto;
-    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
     display: block;
   }
 
-  .frame .footer-info-2 {
-    flex-direction: column;
-    gap: 40px;
-    align-items: flex-start;
-  }
-
-  .frame .text-input-desktop,
-  .frame .write-something-wrapper {
-    width: 100%;
+  /* Footer placed at bottom naturally in layout */
+  .frame .footer {
+    margin-top: 60px;
   }
 }
 
-/* ===== Styles for tablets (standard approx 768px to 1024px) ===== */
+/* ===== Tablet standard (481px to 1024px) ===== */
 @media screen and (min-width: 481px) and (max-width: 1024px) {
-  /* --- SKILLS SECTION: horizontal flex with padding and border --- */
+  /* Skills horizontally aligned with wrapping */
   .frame .skills {
     display: flex;
     flex-direction: row;
@@ -64,7 +58,7 @@
     background: #f9f9f9;
   }
 
-  /* Adjust fonts for tablet */
+  /* Font adjustments for tablet */
   .frame .text-wrapper-2 {
     font-size: 56px;
   }
@@ -78,12 +72,12 @@
     font-size: 36px;
   }
 
-  /* Responsive images for tablet */
+  /* Resize images for tablet */
   .frame .image,
   .frame .img,
   .frame .image-2,
   .frame .image-wrapper {
-    max-width: 500px;
+    max-width: 480px;
     width: 100%;
     height: auto;
     margin-left: auto;
@@ -97,22 +91,30 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 300px; /* adjust as needed */
+    min-height: 320px;
     padding: 40px 20px;
+  }
+
+  /* Move 'Let's work together' section to bottom visually */
+  /* Assuming '.footer' is that section */
+  .frame .footer {
+    order: 9999; /* push to end if flex parent */
+    margin-top: 60px;
+    width: 100%;
   }
 }
 
-/* ===== Styles for phones (standard up to 480px) ===== */
+/* ===== Phone standard (max-width: 480px) ===== */
 @media screen and (max-width: 480px) {
-  /* --- SKILLS SECTION: horizontal flex with scroll --- */
+  /* Skills: horizontal scroll, no wrap */
   .frame .skills {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap; /* no wrapping */
+    flex-wrap: nowrap;
     gap: 12px;
     justify-content: flex-start;
     align-items: center;
-    overflow-x: auto; /* horizontal scroll */
+    overflow-x: auto;
     padding-bottom: 10px;
   }
 
@@ -125,7 +127,7 @@
     white-space: nowrap;
   }
 
-  /* Font size adjustments */
+  /* Font sizes for phone */
   .frame .text-wrapper-2 {
     font-size: 42px;
   }
@@ -138,7 +140,7 @@
     font-size: 28px;
   }
 
-  /* Responsive images for phones */
+  /* Resize images for phone */
   .frame .image,
   .frame .img,
   .frame .image-2,
@@ -157,11 +159,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 250px; /* adjust as needed */
+    min-height: 280px;
     padding: 30px 10px;
   }
 
-  /* Padding for container sections */
+  /* Move 'Let's work together' section to bottom */
+  .frame .footer {
+    order: 9999; /* ensure footer is last */
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  /* Padding adjustments */
   .frame .skills-section,
   .frame .logos-section,
   .frame .latest-work-section,
@@ -180,7 +189,7 @@
   }
 }
 
-/* ===== Styles for very small screens (up to 360px) ===== */
+/* ===== Very small phones (up to 360px) ===== */
 @media screen and (max-width: 360px) {
   .frame .headline-subhead-3,
   .frame .headline-subhead-4 {
