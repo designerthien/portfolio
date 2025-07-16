@@ -1,70 +1,74 @@
-/* Base Styles */
-body {
+
+/* Global Styles */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
   background-color: #ffffff;
+  color: #000000;
+  overflow-x: hidden;
 }
 
 .frame {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
-/* Header */
+/* Header Section */
 .frame .header {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  max-width: 1280px;
-  width: 100%;
-  height: auto;
-  padding: 100px 20px;
-  box-sizing: border-box;
+  height: 887px;
+  padding: 120px 80px;
   position: relative;
 }
 
+.frame .image {
+  width: 510px;
+  height: 510px;
+  object-fit: cover;
+}
+
 .frame .headline-subhead {
-  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
 }
 
 .frame .text-wrapper-2 {
-  font-size: 128px;
+  font-size: 96px;
   font-weight: 700;
-  line-height: 118px;
-  margin: 0;
+  letter-spacing: -3.84px;
 }
 
 .frame .i-am-robert-s-le {
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 52px;
-  margin-top: 32px;
+  font-size: 48px;
+  line-height: 76.8px;
+  font-weight: 500;
 }
 
 .frame .text-wrapper-3 {
-  font-size: 56px;
-  font-weight: 500;
-  line-height: 67px;
-  margin-top: 48px;
+  font-size: 64px;
+  font-weight: 700;
+  position: absolute;
+  bottom: 0;
+  left: 80px;
 }
 
 .frame .union {
   position: absolute;
-  right: 32px;
-  top: 60px;
-  width: 80px;
-  height: auto;
-}
-
-/* Header Video */
-.frame .image {
-  max-width: 510px;
+  top: 0;
+  left: 0;
   width: 100%;
   height: auto;
+  z-index: -1;
 }
 
 /* Latest Work Section */
@@ -72,102 +76,159 @@ body {
   position: relative;
   width: 100%;
   background-color: #ffffff;
-  padding: 150px 20px 200px;
-  box-sizing: border-box;
+  padding: 125px 20px 150px;
 }
 
 .frame .overlap {
-  max-width: 1280px;
   width: 100%;
+  max-width: 1280px;
   margin: 0 auto;
   text-align: center;
 }
 
 .frame .ellipse {
-  display: block;
-  width: 200px;
-  height: auto;
-  margin: 0 auto 40px;
+  display: none;
 }
 
 .frame .my-latest-work {
-  font-size: 48px;
-  font-weight: 600;
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 700;
   margin-bottom: 64px;
 }
 
-/* Work Cards */
 .frame .work-cards-mobile {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
+  display: grid;
+  gap: 32px;
   justify-content: center;
 }
 
-.frame .card {
+.frame .work-card {
+  background-color: #f3f3f3;
+  padding: 32px;
+  border-radius: 16px;
+  text-align: center;
   width: 100%;
-  max-width: 600px;
-  background-color: #f5f5f5;
-  padding: 20px;
-  box-sizing: border-box;
-  border-radius: 8px;
+  max-width: 400px;
 }
 
-/* Responsive Styles */
-@media screen and (max-width: 1024px) {
-  .frame .header {
+.frame .project-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.frame .project-description {
+  font-size: 16px;
+  line-height: 24px;
+  color: #444444;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 1280px) {
+  .frame {
+    width: 100%;
+  }
+
+  .frame .navigation,
+  .frame .header,
+  .frame .logos-section,
+  .frame .skills-section,
+  .frame .latest-work-section,
+  .frame .footer {
+    width: 100%;
+  }
+
+  .frame .logos {
+    width: 100%;
+  }
+
+  .frame .work-cards-mobile {
+    width: 90%;
+    left: 5%;
+  }
+
+  .frame .frame-wrapper,
+  .frame .work-card,
+  .frame .work-card-2 {
+    width: 100%;
+  }
+
+  .frame .div-2 {
     flex-direction: column;
-    padding: 60px 20px;
+    width: 100%;
+  }
+
+  .frame .image-wrapper,
+  .frame .img,
+  .frame .image-2 {
+    width: 100%;
+    height: auto;
+  }
+
+  .frame .div-3 {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  .frame .footer-info-2 {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .frame .text-input-desktop,
+  .frame .write-something-wrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .frame .skills {
+    flex-direction: column;
+    gap: 60px;
   }
 
   .frame .text-wrapper-2 {
-    font-size: 96px;
-    line-height: 96px;
-    text-align: center;
+    font-size: 80px;
   }
 
   .frame .i-am-robert-s-le {
-    font-size: 32px;
-    line-height: 42px;
-    text-align: center;
+    font-size: 40px;
+    line-height: 60px;
   }
 
   .frame .text-wrapper-3 {
-    font-size: 40px;
-    text-align: center;
-    margin-top: 32px;
+    font-size: 60px;
+  }
+
+  .frame .headline-subhead,
+  .frame .and-i-made-it-myself {
+    width: 100%;
   }
 
   .frame .image {
-    margin-top: 40px;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 30px auto;
   }
 
-  .frame .union {
-    display: none;
+  .frame .header {
+    height: auto;
+    padding: 50px 20px;
+  }
+
+  .frame .i-built-this-website,
+  .frame .contact-message {
+    width: 100%;
   }
 
   .frame .my-latest-work {
     font-size: 36px;
   }
-}
 
-@media screen and (max-width: 600px) {
-  .frame .text-wrapper-2 {
-    font-size: 64px;
-    line-height: 72px;
-  }
-
-  .frame .i-am-robert-s-le {
-    font-size: 24px;
-    line-height: 36px;
-  }
-
-  .frame .text-wrapper-3 {
-    font-size: 32px;
-    line-height: 44px;
-  }
-
-  .frame .my-latest-work {
-    font-size: 28px;
+  .frame .work-cards-mobile {
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
 }
