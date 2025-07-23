@@ -8,6 +8,12 @@ html,
 body {
   margin: 0px;
   height: 100%;
+  overflow-x: hidden;
+}
+
+/* Custom property for mobile viewport height */
+:root {
+  --vh: 1vh;
 }
 /* a blue color as a generic focus style */
 button:focus-visible {
