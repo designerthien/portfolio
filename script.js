@@ -29,9 +29,34 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
       frame.style.width = '1280px';
     }
+    
+    // Adjust work cards for mobile
+    if (window.innerWidth <= 430) {
+      const workCards = document.querySelectorAll('.frame-wrapper');
+      workCards.forEach(card => {
+        const imageWrapper = card.querySelector('.image-wrapper');
+        const contentDiv = card.querySelector('.div-3');
+        if (imageWrapper && contentDiv) {
+          card.querySelector('.div-2').style.flexDirection = 'column';
+          imageWrapper.style.width = '100%';
+          contentDiv.style.width = '100%';
+        }
+      });
+    }
   }
   
   // Initial call and event listener for resize
   adjustLayout();
   window.addEventListener('resize', adjustLayout);
+  
+  // Fix for mobile viewport height issues
+  function setMobileHeight() {
+    // First we get the viewport height and multiply it by 1% to get a value for a vh unit
+    let vh = window.innerHeight * 0.01;
+    // Then we set the value in the --vh custom property to the root of the document
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
+  
+  setMobileHeight();
+  window.addEventListener('resize', setMobileHeight);
 });
